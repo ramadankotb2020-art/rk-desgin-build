@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مخطط الغرف 2D — أداة تصميم مجانية | RK Design Studio</title>
+  <meta name="keywords" content="مخطط غرف، تصميم 2D، أداة تصميم مجانية، مخطط طابق، رمضان قطب">
+  <meta name="description" content="استخدم أداة مخطط الغرف 2D المجانية لتصميم وتخطيط غرفتك بنفسك. من رمضان قطب للتصميم الداخلي.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .planner-app { display: grid; grid-template-columns: 320px 1fr; gap: 32px; margin-top: 36px; }
+    @media (max-width: 900px) { .planner-app { grid-template-columns: 1fr; } }
+    .planner-sidebar { background: var(--bg-panel); padding: 28px; border: 1px solid var(--line); display: flex; flex-direction: column; gap: 28px; }
+    .planner-block h4 { font-size: 16px; margin-bottom: 14px; color: var(--gold); }
+    .room-type-chips, .tool-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+    .room-type-chips button, .tool-buttons button { padding: 10px 16px; border: 1px solid var(--line); background: var(--bg); color: var(--white); font-size: 14px; font-weight: 600; transition: all 0.3s var(--ease); }
+    .room-type-chips button.is-active, .tool-buttons button.is-active { background: var(--gold); color: var(--bg); border-color: var(--gold); }
+    .furniture-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .furniture-item { padding: 14px; background: var(--bg); border: 1px solid var(--line); color: var(--white); text-align: center; cursor: pointer; font-size: 14px; font-weight: 600; }
+    .furniture-item:hover { border-color: var(--gold); color: var(--gold); }
+    .planner-canvas-wrap { background: #111214; border: 1px solid var(--line); padding: 16px; display: flex; align-items: center; justify-content: center; overflow: auto; }
+    #plannerCanvas { background: #16181B; touch-action: none; }
+    .planner-actions { display: flex; gap: 20px; margin-top: 32px; justify-content: flex-end; flex-wrap: wrap; }
+  </style>
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="رمضان قطب — RK Design Studio">
+  <link rel="canonical" href="https://rk-design.com/room-designer.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rk-design.com/room-designer.html">
+  <meta property="og:title" content="مخطط 2D — رمضان قطب">
+  <meta property="og:description" content="استخدم أداة مخطط الغرف 2D المجانية لتصميم وتخطيط غرفتك بنفسك. من رمضان قطب للتصميم الداخلي.">
+  <meta property="og:image" content="https://rk-design.com/images/brand/cover-banner-v2.png">
+  <meta property="og:locale" content="ar_EG">
+  <meta property="og:site_name" content="RK Design Studio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="مخطط 2D — رمضان قطب">
+  <meta name="twitter:description" content="استخدم أداة مخطط الغرف 2D المجانية لتصميم وتخطيط غرفتك بنفسك. من رمضان قطب للتصميم الداخلي.">
+  <meta name="twitter:image" content="https://rk-design.com/images/brand/cover-banner-v2.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <meta name="theme-color" content="#c5a059">
+</head>
+<body>
+  <div id="page-loader" aria-hidden="true"><div class="loader-mark">RK</div></div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <div class="brand-mark">RK</div>
+        <div class="brand-text">
+          <span>Ramadan Kotb</span>
+          <small>DESIGN PORTFOLIO</small>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="about.html">من نحن</a>
+        <a href="interior-design.html">خدماتنا</a>
+        <a href="interior-design.html">معرض الأعمال</a>
+        <a href="room-designer.html" class="active">صمم مساحتك 2D</a>
+        <a href="contact.html">اتصل بنا</a>
+      </nav>
+      <div class="nav-actions">
+        <button type="button" class="icon-btn" data-search-trigger aria-label="البحث">🔍</button>
+        <a href="contact.html" class="btn-gold-outline">طلب استشارة مجانية</a>
+        <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section-tight" style="padding-top: 140px;">
+    <div class="container">
+      <div class="section-title">
+        <h2>أداة <span class="gold-text">تخطيط الغرف 2D</span></h2>
+        <p>صمم مساحتك بنفسك واحصل على استشارة</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="planner-app">
+
+        <aside class="planner-sidebar">
+          <div class="planner-block">
+            <h4>1. نوع الغرفة</h4>
+            <div class="room-type-chips" id="roomTypeChips">
+              <button type="button" data-room="living" class="is-active">معيشة</button>
+              <button type="button" data-room="bedroom">نوم</button>
+              <button type="button" data-room="kitchen">مطبخ</button>
+              <button type="button" data-room="bathroom">حمام</button>
+              <button type="button" data-room="kids">أطفال</button>
+            </div>
+          </div>
+
+          <div class="planner-block">
+            <h4>2. أدوات الرسم</h4>
+            <div class="tool-buttons" id="toolButtons">
+              <button type="button" data-tool="wall" class="is-active">▭ حائط</button>
+              <button type="button" data-tool="door">🚪 باب</button>
+              <button type="button" data-tool="window">▦ شباك</button>
+              <button type="button" data-tool="erase">✕ حذف</button>
+            </div>
+          </div>
+
+          <div class="planner-block">
+            <h4>3. قطع الأثاث — <span id="furnitureRoomLabel">معيشة</span></h4>
+            <div class="furniture-grid" id="furnitureGrid"></div>
+          </div>
+
+          <button type="button" id="clearAll" class="btn btn-ghost" style="width: 100%;">مسح اللوحة والبدء من جديد</button>
+        </aside>
+
+        <div class="planner-canvas-wrap">
+          <canvas id="plannerCanvas" width="900" height="620"></canvas>
+        </div>
+
+      </div>
+
+      <div class="planner-actions">
+        <button type="button" id="downloadDesign" class="btn btn-outline">تحميل التصميم كصورة 📷</button>
+        <a id="sendWhatsapp" href="#" target="_blank" rel="noopener" class="btn btn-solid">ارسل تصميمك واستشر المهندس عبر الواتساب 💬</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand">
+            <div class="brand-mark">RK</div>
+            <div class="brand-text">
+              <span style="color: var(--white);">Ramadan Kotb</span>
+              <small>DESIGN PORTFOLIO</small>
+            </div>
+          </div>
+          <p>استوديو التصميم الداخلي والمعماري.</p>
+        </div>
+        <div class="footer-col">
+          <h4>روابط القائمة</h4>
+          <div class="footer-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">من نحن</a>
+            <a href="interior-design.html">خدماتنا</a>
+            <a href="room-designer.html">صمم مساحتك 2D</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>المعرض</h4>
+          <div class="footer-links">
+            <a href="interior-design.html">تصميم داخلي</a>
+            <a href="exterior-design.html">تصميم خارجي</a>
+            <a href="graphic-design.html">تصميم جرافيك</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>تواصل</h4>
+          <div class="footer-links">
+            <a href="tel:01112630681">01112630681</a>
+            <a href="https://wa.me/201112630681" target="_blank">واتساب</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> RK-DESIGN — المهندس رمضان قطب.</p>
+          </div>
+  </div>
+</footer>
+
+  <script src="js/projects-data.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/room-planner.js" defer></script>
+</body>
+</html>

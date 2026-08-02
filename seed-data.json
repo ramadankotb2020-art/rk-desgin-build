@@ -1,0 +1,1126 @@
+[
+  {
+    "id": "madinaty-badr",
+    "discipline": "interior",
+    "category": "شقق سكنية",
+    "title": "شقة عائلية — مدينة بدر",
+    "location": "مدينة بدر",
+    "area": "80 م²",
+    "year": "2024",
+    "cover": "images/projects/madinaty-badr.png",
+    "before": null,
+    "gallery": [],
+    "excerpt": "تحويل مساحة على المسطح إلى صالة استقبال دافئة بروح عصرية هادئة.",
+    "description": "شقة بمساحة 80 مترًا سُلّمت على المسطح، وكان الهدف تصميم صالة استقبال تجمع بين البساطة والدفء دون إثقال المساحة. اعتمدنا على تناغم الألوان المحايدة، إضاءة مخفية بالأسقف الجبسية، وقطع أثاث مختارة بعناية لتمنح إحساسًا بالرحابة رغم المساحة المحدودة.",
+    "idea": "الفكرة التصميمية قامت على تبسيط الخطوط وتوزيع الإضاءة بشكل يخلق طبقات بصرية هادئة، مع لوحات ديكورية هندسية تكسر رتابة الحائط الرئيسي وتمنح الصالة طابعًا مميزًا.",
+    "materials": [
+      "دهانات مطفية فاخرة",
+      "أرضيات باركيه",
+      "أسقف جبسية بإضاءة مخفية",
+      "أثاث تنجيد قماش"
+    ],
+    "tags": [
+      "صالة استقبال",
+      "80 متر",
+      "تسليم كامل"
+    ]
+  },
+  {
+    "id": "shorouk",
+    "discipline": "interior",
+    "category": "شقق سكنية",
+    "title": "شقة عصرية — الشروق",
+    "location": "الشروق",
+    "area": "120 م²",
+    "year": "2024",
+    "cover": "images/projects/shorouk.png",
+    "before": null,
+    "gallery": [],
+    "excerpt": "صالة معيشة وسفرة بروح داكنة أنيقة تجمع بين الرصانة والدفء.",
+    "description": "مشروع بمساحة 120 مترًا في الشروق تضمن تصميم صالة معيشة متصلة بركن السفرة. اخترنا لوحة ألوان داكنة هادئة تعكس ذوقًا رصينًا، مع تفاصيل إضاءة معلّقة فوق طاولة السفرة تمنح المكان طابعًا احتفاليًا في المناسبات العائلية.",
+    "idea": "التصميم يعتمد على الفصل البصري بين منطقتي الجلوس والسفرة عبر اختلاف الإضاءة ودرجات اللون، مع الحفاظ على تدفق بصري واحد يجمع المساحتين في مشهد متكامل.",
+    "materials": [
+      "وحدات عرض خشبية بإضاءة داخلية",
+      "سجاد صوف كثيف",
+      "إضاءة معلّقة",
+      "رخام طبيعي للأرضيات"
+    ],
+    "tags": [
+      "معيشة وسفرة",
+      "120 متر",
+      "تسليم كامل"
+    ]
+  },
+  {
+    "id": "gisr-elsuez",
+    "discipline": "interior",
+    "category": "شقق سكنية",
+    "title": "شقة معاصرة — جسر السويس",
+    "location": "جسر السويس",
+    "area": "120 م²",
+    "year": "2023",
+    "cover": "images/projects/gisr-elsuez.png",
+    "before": null,
+    "gallery": [],
+    "excerpt": "وحدة تلفزيون خشبية بإضاءة خطية وحوائط معرض للوحات الفنية.",
+    "description": "في هذا المشروع بمساحة 120 مترًا، صُمم ركن الميديا حول وحدة خشبية دافئة مؤطرة بإضاءة خطية مخفية، وقابلها حائط معرض للوحات فنية بالأبيض والأسود يمنح الصالة طابعًا معاصرًا يشبه صالات العرض.",
+    "idea": "الفكرة الأساسية هي معالجة حائط التلفزيون كنقطة جذب بصرية عبر الإضاءة الخطية، مع موازنته بحائط لوحات هادئ يمنح الفراغ عمقًا وثقافة بصرية دون تشتيت.",
+    "materials": [
+      "خشب قشرة طبيعي",
+      "إضاءة LED خطية",
+      "دهانات نيدل بيج",
+      "ستائر كتان فاتحة"
+    ],
+    "tags": [
+      "ميديا وول",
+      "120 متر",
+      "تسليم كامل"
+    ]
+  },
+  {
+    "id": "banha",
+    "discipline": "interior",
+    "category": "غرف نوم",
+    "title": "غرفة نوم رئيسية — بنها",
+    "location": "بنها",
+    "area": "150 م²",
+    "year": "2023",
+    "cover": "images/projects/banha.png",
+    "before": null,
+    "gallery": [],
+    "excerpt": "غرفة نوم بلمسات كلاسيكية معاصرة وتوليفة ألوان ترابية دافئة.",
+    "description": "غرفة نوم رئيسية ضمن شقة بمساحة 150 مترًا، صُممت بلمسة كلاسيكية معاصرة تجمع بين الخشب الداكن والتفاصيل الذهبية الخفيفة. طاولة تسريحة مطلة على النافذة، وستائر مزدوجة تمنح الغرفة خصوصية وإحساسًا فندقيًا.",
+    "idea": "التصميم يوازن بين الطابع الكلاسيكي في القطع الخشبية المفرّغة والإحساس المعاصر في اختيار الألوان الترابية والإضاءة المخفية أعلى تجهيزة السرير.",
+    "materials": [
+      "خشب زان مصمت",
+      "قماش مخمل للستائر",
+      "أرضيات باركيه",
+      "إضاءة مخفية علوية"
+    ],
+    "tags": [
+      "غرفة نوم",
+      "150 متر",
+      "تسليم كامل"
+    ]
+  },
+  {
+    "id": "ain-shams",
+    "discipline": "interior",
+    "category": "شقق سكنية",
+    "title": "صالة استقبال بسيطة — عين شمس",
+    "location": "عين شمس",
+    "area": "100 م²",
+    "year": "2023",
+    "cover": "images/projects/ain-shams.png",
+    "before": null,
+    "gallery": [],
+    "excerpt": "صالة استقبال بألوان فاتحة ووحدة تلفزيون معلّقة أنيقة.",
+    "description": "مشروع بمساحة 100 متر ركّز على تبسيط عناصر الصالة إلى أقصى درجة، مع وحدة تلفزيون بيضاء معلّقة ورفوف عرض مفتوحة، لتظل المساحة مريحة بصريًا وسهلة الصيانة يوميًا.",
+    "idea": "الاعتماد على الألوان الفاتحة والخطوط المستقيمة يمنح المساحة اتساعًا بصريًا، بينما تضيف الإضاءة الدائرية المعلّقة لمسة عصرية مميزة لسقف الصالة.",
+    "materials": [
+      "وحدات معلّقة بديكور أبيض",
+      "دهانات فاتحة",
+      "إضاءة معلّقة دائرية",
+      "نباتات ديكورية"
+    ],
+    "tags": [
+      "صالة استقبال",
+      "100 متر",
+      "تسليم كامل"
+    ]
+  },
+  {
+    "id": "abbasiya",
+    "discipline": "interior",
+    "category": "شقق سكنية",
+    "title": "صالة بروح لونية جريئة — العباسية",
+    "location": "العباسية",
+    "area": "80 م²",
+    "year": "2022",
+    "cover": "images/projects/abbasiya.png",
+    "before": null,
+    "gallery": [],
+    "excerpt": "حائط تركواز جريء وقطع أثاث ملونة تكسر الرتابة في مساحة صغيرة.",
+    "description": "شقة بمساحة 80 مترًا اخترنا لها لغة لونية أكثر جرأة، بحائط تركواز مقسّم بمنحنيات جبسية وقطع أثاث زرقاء ونحاسية، لتتحول المساحة الصغيرة إلى صالة مفعمة بالشخصية دون أن تفقد اتزانها.",
+    "idea": "الفكرة هنا معاكسة لبقية المشاريع الهادئة: استخدام اللون كعنصر تصميمي رئيسي، مع ضبط باقي العناصر (الأرضيات، الستائر) بدرجات محايدة لتبقى الجرأة اللونية متحكّمًا فيها.",
+    "materials": [
+      "دهانات تركواز",
+      "تنجيد قماش ملوّن",
+      "تفاصيل نحاسية",
+      "إضاءة مخفية منحنية"
+    ],
+    "tags": [
+      "صالة استقبال",
+      "80 متر",
+      "تسليم كامل"
+    ]
+  },
+  {
+    "id": "kids-area",
+    "discipline": "interior",
+    "category": "غرف أطفال",
+    "title": "ركن أطفال ملوّن",
+    "location": "",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/kids-area-01.webp",
+    "before": null,
+    "gallery": [
+      "images/projects/kids-area-02.webp",
+      "images/projects/kids-area-03.webp",
+      "images/projects/kids-area-04.webp",
+      "images/projects/kids-area-05.webp",
+      "images/projects/kids-area-06.webp",
+      "images/projects/kids-area-07.webp",
+      "images/projects/kids-area-08.png"
+    ],
+    "excerpt": "مساحة لعب وأنشطة للأطفال بألوان مبهجة.",
+    "description": "تصميم ركن أطفال مخصص للعب والأنشطة، بألوان مبهجة وعناصر آمنة تراعي طبيعة استخدام الأطفال للمساحة.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "غرف أطفال"
+    ]
+  },
+  {
+    "id": "master-bedroom-02",
+    "discipline": "interior",
+    "category": "غرف نوم",
+    "title": "غرفة نوم رئيسية — نسخة أخرى",
+    "location": "",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/master-bedroom-02-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/master-bedroom-02-02.png",
+      "images/projects/master-bedroom-02-03.png",
+      "images/projects/master-bedroom-02-04.webp"
+    ],
+    "excerpt": "تصميم بديل لغرفة نوم رئيسية بلمسة عصرية.",
+    "description": "مقترح تصميمي آخر لغرفة نوم رئيسية، بتوزيع مختلف للأثاث ولمسة ألوان عصرية تمنح الغرفة طابعًا مختلفًا.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "غرف نوم"
+    ]
+  },
+  {
+    "id": "master-bedroom-01",
+    "discipline": "interior",
+    "category": "غرف نوم",
+    "title": "غرفة نوم رئيسية — تصميم دافئ",
+    "location": "",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/master-bedroom-01-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/master-bedroom-01-02.png",
+      "images/projects/master-bedroom-01-03.png",
+      "images/projects/master-bedroom-01-04.png",
+      "images/projects/master-bedroom-01-05.png",
+      "images/projects/master-bedroom-01-06.png",
+      "images/projects/master-bedroom-01-07.png",
+      "images/projects/master-bedroom-01-08.png"
+    ],
+    "excerpt": "غرفة نوم رئيسية بلمسات خشبية دافئة وإضاءة هادئة.",
+    "description": "تصميم غرفة نوم رئيسية يعتمد على الخامات الخشبية الدافئة والإضاءة المخفية لخلق أجواء هادئة ومريحة.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "غرف نوم"
+    ]
+  },
+  {
+    "id": "modern-reception",
+    "discipline": "interior",
+    "category": "صالات استقبال",
+    "title": "صالة استقبال عصرية",
+    "location": "",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/modern-reception-01.webp",
+    "before": null,
+    "gallery": [
+      "images/projects/modern-reception-02.webp",
+      "images/projects/modern-reception-03.webp",
+      "images/projects/modern-reception-04.webp",
+      "images/projects/modern-reception-05.webp"
+    ],
+    "excerpt": "صالة استقبال بخطوط عصرية بسيطة.",
+    "description": "تصميم صالة استقبال بأسلوب عصري بسيط، يعتمد على خطوط نظيفة ومساحات مفتوحة.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "صالات استقبال"
+    ]
+  },
+  {
+    "id": "reception-01",
+    "discipline": "interior",
+    "category": "صالات استقبال",
+    "title": "صالة استقبال — تصميم 1",
+    "location": "",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/reception-01-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/reception-01-02.png",
+      "images/projects/reception-01-03.png",
+      "images/projects/reception-01-04.png",
+      "images/projects/reception-01-05.png",
+      "images/projects/reception-01-06.png",
+      "images/projects/reception-01-07.png",
+      "images/projects/reception-01-08.png",
+      "images/projects/reception-01-09.png",
+      "images/projects/reception-01-10.png",
+      "images/projects/reception-01-11.png"
+    ],
+    "excerpt": "صالة استقبال متكاملة بتفاصيل عصرية.",
+    "description": "تصميم صالة استقبال متكاملة، يجمع بين الراحة البصرية وتوزيع مدروس للأثاث.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "صالات استقبال"
+    ]
+  },
+  {
+    "id": "reception-02",
+    "discipline": "interior",
+    "category": "صالات استقبال",
+    "title": "صالة استقبال — تصميم 2",
+    "location": "",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/reception-02-01.webp",
+    "before": null,
+    "gallery": [
+      "images/projects/reception-02-02.webp",
+      "images/projects/reception-02-03.webp",
+      "images/projects/reception-02-04.webp"
+    ],
+    "excerpt": "صالة استقبال بلمسة لونية مختلفة.",
+    "description": "مقترح تصميمي بديل لصالة استقبال، بلوحة ألوان وتفاصيل إضاءة مختلفة عن التصميم الأول.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "صالات استقبال"
+    ]
+  },
+  {
+    "id": "reception-03",
+    "discipline": "interior",
+    "category": "صالات استقبال",
+    "title": "صالة استقبال — تصميم 3",
+    "location": "",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/reception-03-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/reception-03-02.png",
+      "images/projects/reception-03-03.png",
+      "images/projects/reception-03-04.png"
+    ],
+    "excerpt": "صالة استقبال بتوزيع مساحي مختلف.",
+    "description": "مقترح تصميمي ثالث لصالة استقبال بتوزيع مساحي وتفاصيل ديكورية مختلفة.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "صالات استقبال"
+    ]
+  },
+  {
+    "id": "bathroom-modern",
+    "discipline": "interior",
+    "category": "حمامات",
+    "title": "حمام عصري",
+    "location": "",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/bathroom-modern-01.jpeg",
+    "before": null,
+    "gallery": [
+      "images/projects/bathroom-modern-02.jpeg"
+    ],
+    "excerpt": "تصميم حمام بخامات عصرية وإضاءة هادئة.",
+    "description": "تصميم حمام بخامات عصرية سهلة التنظيف، مع إضاءة هادئة تمنح المساحة إحساسًا فندقيًا مريحًا.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "حمامات"
+    ]
+  },
+  {
+    "id": "kids-room",
+    "discipline": "interior",
+    "category": "غرف أطفال",
+    "title": "غرفة أطفال",
+    "location": "",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/kids-room-01.webp",
+    "before": null,
+    "gallery": [
+      "images/projects/kids-room-02.webp",
+      "images/projects/kids-room-03.webp",
+      "images/projects/kids-room-04.webp",
+      "images/projects/kids-room-05.webp",
+      "images/projects/kids-room-06.webp"
+    ],
+    "excerpt": "غرفة نوم أطفال بطابع مرح وعملي.",
+    "description": "تصميم غرفة نوم أطفال يجمع بين الطابع المرح والعملية، مع مساحات تخزين مدروسة.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "غرف أطفال"
+    ]
+  },
+  {
+    "id": "kitchen-modern",
+    "discipline": "interior",
+    "category": "مطابخ",
+    "title": "مطبخ عصري",
+    "location": "",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/kitchen-modern-01.webp",
+    "before": null,
+    "gallery": [
+      "images/projects/kitchen-modern-02.webp",
+      "images/projects/kitchen-modern-03.webp"
+    ],
+    "excerpt": "تصميم مطبخ بخطوط عصرية ووحدات عملية.",
+    "description": "تصميم مطبخ عصري يركّز على العملية في التوزيع، مع وحدات تخزين مدروسة وخامات سهلة الصيانة.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "مطابخ"
+    ]
+  },
+  {
+    "id": "apartment-full-set",
+    "discipline": "interior",
+    "category": "شقق سكنية",
+    "title": "شقة سكنية متكاملة — مجموعة رندرات",
+    "location": "",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/apartment-full-set-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/apartment-full-set-02.png",
+      "images/projects/apartment-full-set-03.png",
+      "images/projects/apartment-full-set-04.png",
+      "images/projects/apartment-full-set-05.png",
+      "images/projects/apartment-full-set-06.png",
+      "images/projects/apartment-full-set-07.png",
+      "images/projects/apartment-full-set-08.png",
+      "images/projects/apartment-full-set-09.png",
+      "images/projects/apartment-full-set-10.png",
+      "images/projects/apartment-full-set-11.png",
+      "images/projects/apartment-full-set-12.png",
+      "images/projects/apartment-full-set-13.png",
+      "images/projects/apartment-full-set-14.png",
+      "images/projects/apartment-full-set-15.png",
+      "images/projects/apartment-full-set-16.png",
+      "images/projects/apartment-full-set-17.png",
+      "images/projects/apartment-full-set-18.png",
+      "images/projects/apartment-full-set-19.png",
+      "images/projects/apartment-full-set-20.png",
+      "images/projects/apartment-full-set-21.png",
+      "images/projects/apartment-full-set-22.png",
+      "images/projects/apartment-full-set-23.png",
+      "images/projects/apartment-full-set-24.png",
+      "images/projects/apartment-full-set-25.png",
+      "images/projects/apartment-full-set-26.png",
+      "images/projects/apartment-full-set-27.png",
+      "images/projects/apartment-full-set-28.png",
+      "images/projects/apartment-full-set-29.png",
+      "images/projects/apartment-full-set-30.png",
+      "images/projects/apartment-full-set-31.png"
+    ],
+    "excerpt": "مجموعة رندرات واسعة لمساحات متعددة داخل نفس الشقة.",
+    "description": "مجموعة رندرات لشقة سكنية متكاملة، تغطي زوايا متعددة من نفس المساحة لإعطاء رؤية شاملة عن التصميم قبل التنفيذ.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "تصميم داخلي"
+    ]
+  },
+  {
+    "id": "interior-concepts",
+    "discipline": "interior",
+    "category": "شقق سكنية",
+    "title": "تصورات تصميم داخلي مبدئية",
+    "location": "",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/interior-concepts-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/interior-concepts-02.png",
+      "images/projects/interior-concepts-03.png",
+      "images/projects/interior-concepts-04.png",
+      "images/projects/interior-concepts-05.png",
+      "images/projects/interior-concepts-06.png",
+      "images/projects/interior-concepts-07.png",
+      "images/projects/interior-concepts-08.png",
+      "images/projects/interior-concepts-09.png",
+      "images/projects/interior-concepts-10.png",
+      "images/projects/interior-concepts-11.png",
+      "images/projects/interior-concepts-12.png",
+      "images/projects/interior-concepts-13.png",
+      "images/projects/interior-concepts-14.png",
+      "images/projects/interior-concepts-15.png",
+      "images/projects/interior-concepts-16.png",
+      "images/projects/interior-concepts-17.png",
+      "images/projects/interior-concepts-18.png",
+      "images/projects/interior-concepts-19.png",
+      "images/projects/interior-concepts-20.png"
+    ],
+    "excerpt": "مجموعة تصورات ومقترحات أولية لمساحات داخلية متنوعة.",
+    "description": "مجموعة تصورات ومقترحات تصميمية أولية لمساحات داخلية متنوعة، استُخدمت في مرحلة استكشاف الأفكار قبل الاعتماد النهائي.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "تصميم داخلي"
+    ]
+  },
+  {
+    "id": "alwaad-upvc",
+    "discipline": "graphic",
+    "category": "هوية بصرية",
+    "title": "ALWAAD UPVC — هوية تجارية",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/alwaad-upvc-01.jpg",
+    "before": null,
+    "gallery": [
+      "images/projects/alwaad-upvc-02.png"
+    ],
+    "excerpt": "هوية بصرية لعلامة متخصصة في تصنيع الألوميتال والـ UPVC.",
+    "description": "تصميم هوية بصرية وشعار لشركة متخصصة في تصنيع نوافذ وأبواب الـ UPVC، بأسلوب يعكس الدقة الصناعية والثقة.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "هوية بصرية"
+    ]
+  },
+  {
+    "id": "aurion-x",
+    "discipline": "graphic",
+    "category": "هوية بصرية",
+    "title": "AURION X — Born from Imagination",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/aurion-x-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/aurion-x-02.png",
+      "images/projects/aurion-x-03.png",
+      "images/projects/aurion-x-04.png"
+    ],
+    "excerpt": "هوية بصرية مفاهيمية لعلامة تقنية مستقبلية.",
+    "description": "مشروع هوية بصرية بروح مستقبلية جريئة، يقدّم نظام ألوان وأشكال يعكس فكرة الابتكار والخيال بلا حدود.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "هوية بصرية"
+    ]
+  },
+  {
+    "id": "adidas-performance-2025",
+    "discipline": "graphic",
+    "category": "إعلانات",
+    "title": "Adidas Performance Series 2025",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/adidas-performance-2025-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/adidas-performance-2025-02.png"
+    ],
+    "excerpt": "حملة إعلانية مفاهيمية بروح رياضية مستقبلية.",
+    "description": "تصميم إعلاني مفاهيمي بأسلوب حملات الأداء الرياضي، يعتمد على الحركة والتباين اللوني القوي لإبراز طاقة المنتج.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "إعلانات"
+    ]
+  },
+  {
+    "id": "car-spare-parts",
+    "discipline": "graphic",
+    "category": "إعلانات",
+    "title": "Car Spare Parts — تصميم إعلاني",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/car-spare-parts-01.jpg",
+    "before": null,
+    "gallery": [
+      "images/projects/car-spare-parts-02.jpg",
+      "images/projects/car-spare-parts-03.jpg"
+    ],
+    "excerpt": "تصميمات إعلانية لمتجر قطع غيار سيارات.",
+    "description": "مجموعة تصميمات إعلانية لمتجر قطع غيار سيارات، ركّزت على وضوح المعلومة وسهولة قراءة العرض من أول نظرة.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "إعلانات"
+    ]
+  },
+  {
+    "id": "company-logo-01",
+    "discipline": "graphic",
+    "category": "هوية بصرية",
+    "title": "شعار شركة",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/company-logo-01-01.webp",
+    "before": null,
+    "gallery": [
+      "images/projects/company-logo-01-02.webp"
+    ],
+    "excerpt": "تصميم شعار مؤسسي بسيط وقابل للتطبيق.",
+    "description": "تصميم شعار مؤسسي مرن قابل للتطبيق على مختلف الوسائط، مبني على أشكال هندسية بسيطة تسهل تذكّره.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "هوية بصرية"
+    ]
+  },
+  {
+    "id": "morgan-coffee",
+    "discipline": "graphic",
+    "category": "سوشيال ميديا",
+    "title": "Morgan Coffee — سوشيال ميديا",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/morgan-coffee-01.png",
+    "before": null,
+    "gallery": [],
+    "excerpt": "تصميم منشور سوشيال ميديا لعلامة قهوة.",
+    "description": "تصميم منشور دعائي لعلامة قهوة، بألوان دافئة وتكوين بصري يبرز المنتج بأسلوب جذاب.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "سوشيال ميديا"
+    ]
+  },
+  {
+    "id": "social-media-set-01",
+    "discipline": "graphic",
+    "category": "سوشيال ميديا",
+    "title": "تصميمات سوشيال ميديا",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/social-media-set-01-01.jpg",
+    "before": null,
+    "gallery": [
+      "images/projects/social-media-set-01-02.jpg",
+      "images/projects/social-media-set-01-03.jpg",
+      "images/projects/social-media-set-01-04.jpg"
+    ],
+    "excerpt": "مجموعة منشورات سوشيال ميديا متنوعة.",
+    "description": "مجموعة تصميمات منشورات سوشيال ميديا لعملاء مختلفين، بأسلوب بصري موحّد يراعي هوية كل علامة.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "سوشيال ميديا"
+    ]
+  },
+  {
+    "id": "home-comfort",
+    "discipline": "graphic",
+    "category": "سوشيال ميديا",
+    "title": "Home Comfort — حملة سوشيال ميديا",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/home-comfort-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/home-comfort-02.png",
+      "images/projects/home-comfort-03.png",
+      "images/projects/home-comfort-04.png",
+      "images/projects/home-comfort-05.png",
+      "images/projects/home-comfort-06.png",
+      "images/projects/home-comfort-07.png",
+      "images/projects/home-comfort-08.png",
+      "images/projects/home-comfort-09.png",
+      "images/projects/home-comfort-10.png",
+      "images/projects/home-comfort-11.png",
+      "images/projects/home-comfort-12.png"
+    ],
+    "excerpt": "حملة تصميمات سوشيال ميديا متكاملة لعلامة أثاث ومفروشات.",
+    "description": "حملة تصميمات سوشيال ميديا متكاملة لعلامة أثاث ومفروشات منزلية، تغطي منشورات متنوعة بهوية بصرية موحّدة.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "سوشيال ميديا"
+    ]
+  },
+  {
+    "id": "local-brand-lecce",
+    "discipline": "graphic",
+    "category": "هوية بصرية",
+    "title": "Local Brand Lecce",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/local-brand-lecce-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/local-brand-lecce-02.png",
+      "images/projects/local-brand-lecce-03.png"
+    ],
+    "excerpt": "هوية بصرية لعلامة أزياء محلية.",
+    "description": "تصميم هوية بصرية لعلامة أزياء محلية، بأسلوب عصري يوازن بين البساطة والحضور القوي.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "هوية بصرية"
+    ]
+  },
+  {
+    "id": "nike-air-milano",
+    "discipline": "graphic",
+    "category": "هوية بصرية",
+    "title": "Nike Air Milano Edition — Concept",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/nike-air-milano-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/nike-air-milano-02.png"
+    ],
+    "excerpt": "مشروع مفاهيمي لهوية إصدار خاص من نايك.",
+    "description": "مشروع تصميم مفاهيمي (Concept) لهوية إصدار خاص من نايك بإلهام مدينة ميلانو، لأغراض العرض في البورتفوليو.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "هوية بصرية"
+    ]
+  },
+  {
+    "id": "nike-airstep-bloom",
+    "discipline": "graphic",
+    "category": "هوية بصرية",
+    "title": "Nike AirStep Bloom Edition — Concept",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/nike-airstep-bloom-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/nike-airstep-bloom-02.png",
+      "images/projects/nike-airstep-bloom-03.png"
+    ],
+    "excerpt": "مفهوم تصميمي لإصدار أحذية نسائية.",
+    "description": "مشروع مفاهيمي لتصميم هوية إصدار أحذية رياضية نسائية بإلهام زهري، لأغراض العرض في البورتفوليو.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "هوية بصرية"
+    ]
+  },
+  {
+    "id": "nike-milano-mockups",
+    "discipline": "graphic",
+    "category": "هوية بصرية",
+    "title": "Nike Milano — Lifestyle Mockups",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/nike-milano-mockups-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/nike-milano-mockups-02.png"
+    ],
+    "excerpt": "موك أب لأسلوب حياة مرتبط بمفهوم Nike Milano.",
+    "description": "تصميمات موك أب (Mockup) تعرض المنتج في سياق أسلوب حياة، ضمن مشروع Nike Milano المفاهيمي.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "هوية بصرية"
+    ]
+  },
+  {
+    "id": "product-packaging-01",
+    "discipline": "graphic",
+    "category": "مطبوعات",
+    "title": "تصميم تغليف منتج",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/product-packaging-01-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/product-packaging-01-02.png",
+      "images/projects/product-packaging-01-03.png",
+      "images/projects/product-packaging-01-04.png"
+    ],
+    "excerpt": "تصميم عبوة وتغليف منتج استهلاكي.",
+    "description": "تصميم تغليف لمنتج استهلاكي، يجمع بين وضوح المعلومة على العبوة وجاذبية بصرية تميّزه على الرف.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "مطبوعات"
+    ]
+  },
+  {
+    "id": "social-media-posts",
+    "discipline": "graphic",
+    "category": "سوشيال ميديا",
+    "title": "منشورات سوشيال ميديا متنوعة",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/social-media-posts-01.jpg",
+    "before": null,
+    "gallery": [
+      "images/projects/social-media-posts-02.jpg",
+      "images/projects/social-media-posts-03.jpg",
+      "images/projects/social-media-posts-04.jpg",
+      "images/projects/social-media-posts-05.gif",
+      "images/projects/social-media-posts-06.jpg",
+      "images/projects/social-media-posts-07.jpg"
+    ],
+    "excerpt": "مجموعة منشورات سوشيال ميديا لعملاء متعددين.",
+    "description": "مجموعة منشورات سوشيال ميديا لعملاء من قطاعات مختلفة، تعكس مرونة الأسلوب البصري حسب هوية كل عميل.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "سوشيال ميديا"
+    ]
+  },
+  {
+    "id": "social-media-campaign",
+    "discipline": "graphic",
+    "category": "إعلانات",
+    "title": "منشورات دعائية",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/social-media-campaign-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/social-media-campaign-02.png",
+      "images/projects/social-media-campaign-03.png",
+      "images/projects/social-media-campaign-04.png",
+      "images/projects/social-media-campaign-05.png"
+    ],
+    "excerpt": "تصميمات منشورات دعائية بصياغة بصرية قوية.",
+    "description": "مجموعة تصميمات منشورات دعائية بصياغة بصرية قوية ورسالة مباشرة، مناسبة لحملات التوعية والترويج.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "إعلانات"
+    ]
+  },
+  {
+    "id": "dx-hardware",
+    "discipline": "graphic",
+    "category": "هوية بصرية",
+    "title": "DX Hardware — شعار",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/dx-hardware-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/dx-hardware-02.png",
+      "images/projects/dx-hardware-03.png"
+    ],
+    "excerpt": "تصميم شعار لعلامة أدوات ومعدات.",
+    "description": "تصميم شعار لعلامة تجارية متخصصة في الأدوات والمعدات، بأسلوب صناعي واضح وقوي.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "هوية بصرية"
+    ]
+  },
+  {
+    "id": "ramadan-2024",
+    "discipline": "graphic",
+    "category": "سوشيال ميديا",
+    "title": "تصميم رمضان 2024",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/ramadan-2024-01.jpg",
+    "before": null,
+    "gallery": [],
+    "excerpt": "تصميم احتفالي بمناسبة شهر رمضان.",
+    "description": "تصميم منشور احتفالي بمناسبة شهر رمضان المبارك، بطابع بصري دافئ يليق بروح المناسبة.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "سوشيال ميديا"
+    ]
+  },
+  {
+    "id": "restaurant-management",
+    "discipline": "graphic",
+    "category": "هوية بصرية",
+    "title": "هوية بصرية — إدارة مطاعم",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/restaurant-management-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/restaurant-management-02.png"
+    ],
+    "excerpt": "هوية بصرية لعلامة متخصصة في إدارة وتشغيل المطاعم.",
+    "description": "تصميم هوية بصرية لعلامة متخصصة في إدارة وتشغيل المطاعم، بأسلوب احترافي يعكس الثقة والخبرة.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "هوية بصرية"
+    ]
+  },
+  {
+    "id": "teachers-ad",
+    "discipline": "graphic",
+    "category": "إعلانات",
+    "title": "إعلان مجموعة مدرّسين",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/teachers-ad-01.jpg",
+    "before": null,
+    "gallery": [
+      "images/projects/teachers-ad-02.jpg"
+    ],
+    "excerpt": "تصميم إعلاني لمجموعة دروس خصوصية.",
+    "description": "تصميم إعلاني لمجموعة دروس خصوصية، ركّز على وضوح المعلومة بشكل جذاب.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "إعلانات"
+    ]
+  },
+  {
+    "id": "rap-album-cover",
+    "discipline": "graphic",
+    "category": "مطبوعات",
+    "title": "ألبوم راب الأدغال — Cover Design",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/rap-album-cover-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/rap-album-cover-02.png",
+      "images/projects/rap-album-cover-03.png",
+      "images/projects/rap-album-cover-04.png"
+    ],
+    "excerpt": "تصميم غلاف ألبوم موسيقي (راب).",
+    "description": "تصميم غلاف ألبوم موسيقي من نوع الراب، بأسلوب بصري خام وقوي يتماشى مع طابع الموسيقى.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "مطبوعات"
+    ]
+  },
+  {
+    "id": "takhayal-concept",
+    "discipline": "graphic",
+    "category": "سوشيال ميديا",
+    "title": "تخيّل — تصميم مفاهيمي",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/takhayal-concept-01.jpg",
+    "before": null,
+    "gallery": [
+      "images/projects/takhayal-concept-02.jpg"
+    ],
+    "excerpt": "تصميم بصري بفكرة مفاهيمية حول الخيال.",
+    "description": "تصميم بصري مفاهيمي يلعب على فكرة 'تخيّل'، بأسلوب فني حر بعيد عن قوالب التصميم التجاري المعتادة.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "سوشيال ميديا"
+    ]
+  },
+  {
+    "id": "santy-packaging",
+    "discipline": "graphic",
+    "category": "مطبوعات",
+    "title": "سانتي للتعبئة والتغليف",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/santy-packaging-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/santy-packaging-02.png",
+      "images/projects/santy-packaging-03.png",
+      "images/projects/santy-packaging-04.png",
+      "images/projects/santy-packaging-05.png",
+      "images/projects/santy-packaging-06.png"
+    ],
+    "excerpt": "هوية بصرية وتصميمات تغليف لعلامة تعبئة وتغليف.",
+    "description": "تصميم هوية بصرية ومجموعة تصميمات تغليف لعلامة متخصصة في التعبئة والتغليف، شملت الشعار وتطبيقاته.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "مطبوعات"
+    ]
+  },
+  {
+    "id": "price-list",
+    "discipline": "graphic",
+    "category": "مطبوعات",
+    "title": "قائمة أسعار — Price List",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/price-list-01.jpg",
+    "before": null,
+    "gallery": [
+      "images/projects/price-list-02.jpg",
+      "images/projects/price-list-03.jpg",
+      "images/projects/price-list-04.jpg",
+      "images/projects/price-list-05.jpg",
+      "images/projects/price-list-06.jpg"
+    ],
+    "excerpt": "تصميم قائمة أسعار احترافية.",
+    "description": "تصميم قائمة أسعار احترافية بتنسيق واضح وسهل القراءة، مناسبة للطباعة أو المشاركة الرقمية.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "مطبوعات"
+    ]
+  },
+  {
+    "id": "lawyer-logo",
+    "discipline": "graphic",
+    "category": "هوية بصرية",
+    "title": "شعار مكتب محاماة",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/lawyer-logo-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/lawyer-logo-02.png",
+      "images/projects/lawyer-logo-03.png"
+    ],
+    "excerpt": "تصميم شعار لمكتب محاماة.",
+    "description": "تصميم شعار لمكتب محاماة، بأسلوب رصين يعكس الثقة والمصداقية المطلوبة في هذا المجال.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "هوية بصرية"
+    ]
+  },
+  {
+    "id": "pharaohs-fc",
+    "discipline": "graphic",
+    "category": "هوية بصرية",
+    "title": "Pharaohs FC — شعار وقميص فريق",
+    "location": "القاهرة",
+    "area": null,
+    "year": "2024",
+    "cover": "images/projects/pharaohs-fc-01.png",
+    "before": null,
+    "gallery": [
+      "images/projects/pharaohs-fc-02.png",
+      "images/projects/pharaohs-fc-03.png",
+      "images/projects/pharaohs-fc-04.jpg"
+    ],
+    "excerpt": "تصميم شعار وقميص لفريق كرة قدم.",
+    "description": "تصميم هوية رياضية كاملة لفريق كرة قدم، شملت الشعار وتصميم القميص الرسمي بروح فرعونية مستلهمة من التاريخ المصري.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "هوية بصرية"
+    ]
+  },
+  {
+    "id": "exterior-01",
+    "discipline": "exterior",
+    "category": "واجهات خارجية",
+    "title": "رندر واجهة خارجية — فيلا سكنية",
+    "location": "القاهرة الجديدة",
+    "area": null,
+    "year": "2024",
+    "cover": null,
+    "before": null,
+    "gallery": [],
+    "excerpt": "تصور ثلاثي الأبعاد لواجهة فيلا بلمسات معمارية معاصرة.",
+    "description": "رندر معماري لواجهة فيلا سكنية، يوضح توزيع الكتل والخامات والإضاءة الخارجية بشكل واقعي يساعد العميل على اتخاذ القرار قبل التنفيذ الفعلي.",
+    "idea": "إبراز تباين الخامات (حجر، خشب، زجاج) عبر إضاءة زمن الغروب لإعطاء إحساس دافئ وواقعي بالمبنى.",
+    "materials": [
+      "حجر طبيعي",
+      "ألواح خشبية خارجية",
+      "واجهات زجاجية"
+    ],
+    "tags": [
+      "Exterior",
+      "معماري"
+    ]
+  },
+  {
+    "id": "interior-render-01",
+    "discipline": "interior",
+    "category": "رندر داخلي",
+    "title": "رندر داخلي — شقة قبل التنفيذ",
+    "location": "التجمع الخامس",
+    "area": null,
+    "year": "2024",
+    "cover": null,
+    "before": null,
+    "gallery": [],
+    "excerpt": "تصور واقعي للصالة والمطبخ قبل بدء أعمال التشطيب.",
+    "description": "تصميم ثلاثي الأبعاد كامل للصالة والمطبخ المفتوح، يمنح العميل رؤية دقيقة للألوان والخامات والإضاءة قبل الالتزام بأي قرار تنفيذي.",
+    "idea": "محاكاة الإضاءة الطبيعية والصناعية معًا لإعطاء إحساس حقيقي بالمساحة كما ستبدو بعد التسليم فعليًا.",
+    "materials": [
+      "رخام",
+      "خشب",
+      "إضاءة مخفية"
+    ],
+    "tags": [
+      "Interior Rendering",
+      "3D"
+    ]
+  },
+  {
+    "id": "arch-visual-01",
+    "discipline": "exterior",
+    "category": "تصور معماري",
+    "title": "تصور معماري — مبنى إداري",
+    "location": "الشيخ زايد",
+    "area": null,
+    "year": "2023",
+    "cover": null,
+    "before": null,
+    "gallery": [],
+    "excerpt": "دراسة بصرية شاملة لمبنى إداري من الخارج والداخل.",
+    "description": "مشروع تصور معماري متكامل لمبنى إداري، شمل الواجهات الخارجية والمساحات الداخلية المشتركة، لعرضه على المستثمرين قبل مرحلة التنفيذ.",
+    "idea": "تقديم المشروع في سياقه الحضري الكامل، مع لقطات نهارية وليلية توضح أداء الإضاءة في الحالتين.",
+    "materials": [
+      "زجاج عاكس",
+      "ألوميتال",
+      "إضاءة واجهات"
+    ],
+    "tags": [
+      "Architectural Visualization",
+      "3D"
+    ]
+  }
+]

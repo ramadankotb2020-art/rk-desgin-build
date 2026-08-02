@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramadan Kotb — تصميم جرافيك · تصميم داخلي · خارجي ولاندسكيب</title>
+<meta name="description" content="بورتفوليو رمضان قطب — مصمم جرافيك ومصمم داخلي وتصميم خارجي ولاندسكيب. تصفح مشاريع الهوية البصرية، التصميم الداخلي، والمساحات الخارجية.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">
+      <img src="images/brand/logo.png" alt="RK Design" class="mark">
+      <span>Ramadan Kotb<small>DESIGN PORTFOLIO</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">الرئيسية</a>
+      <a href="interior-design.html">تصميم داخلي</a>
+      <a href="exterior-design.html">تصميم خارجي ولاندسكيب</a>
+      <a href="graphic-design.html">تصميم جرافيك</a>
+      <a href="about.html">من أنا</a>
+      <a href="contact.html" class="nav-cta">تواصل معي</a>
+    </nav>
+    <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero-poster-section">
+  <div class="container">
+    <div class="hero-eyebrow reveal">تصميم داخلي وخارجي — وهوية بصرية تكمّل المساحة</div>
+    <h1 class="hero-poster-title reveal" style="--stagger:1;">مساحتك تُصمَّم، وهويتك تُروى معاها<span>.</span></h1>
+  </div>
+  <div class="hero-poster-frame reveal" style="--stagger:2;">
+    <img src="images/brand/cover-banner-v2.png" alt="RK Design & Build — تصميم داخلي وخارجي وبراندينج">
+  </div>
+  <div class="container">
+    <div class="hero-roles reveal" style="--stagger:3;">
+      <span><b>Interior Designer</b></span>
+      <span><b>Exterior &amp; Landscape</b></span>
+      <span><b>Graphic Designer</b></span>
+    </div>
+    <div class="hero-actions reveal" style="--stagger:4;">
+      <a href="interior-design.html" class="btn btn-solid">تصفح أعمال الديكور</a>
+      <a href="contact.html" class="btn btn-ghost">ابدأ مشروعك</a>
+    </div>
+  </div>
+  <div class="scroll-cue">مرّر لتكتشف</div>
+</section>
+
+<!-- ============ STATEMENT ============ -->
+<section class="section">
+  <div class="statement-wrap">
+    <div class="container statement">
+      <div class="eyebrow reveal">نبذة</div>
+      <div>
+        <h2 class="display-2 reveal" style="--stagger:1;">رمضان قطب — تصميم داخلي وخارجي من الفكرة للتسليم، وهوية بصرية تكمّل التجربة.</h2>
+        <p class="lede reveal" style="margin-top:24px; --stagger:2;">
+          أساس شغلي هو المساحة: شقق، فلل، محلات ومكاتب — تصميم داخلي وخارجي متكامل مع إشراف وتنفيذ حتى التسليم الكامل. وعشان كل مشروع يبقى بهوية متكاملة، بقدّم كمان خدمات تصميم جرافيك وبراندينج تكمّل حكاية المكان — شعار، هوية بصرية، أو محتوى بصري يعكس نفس روح التصميم.
+        </p>
+        <div class="stat-row reveal" style="--stagger:3;">
+          <div class="stat"><b>+30</b><span>مشروع تصميم داخلي</span></div>
+          <div class="stat"><b>3</b><span>تخصصات في مكان واحد</span></div>
+          <div class="stat"><b>100%</b><span>من الفكرة للتسليم</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="statement-side-media">
+      <img src="images/projects-by-name/تصميم-داخلي/شقة سكنية متكاملة — مجموعة رندرات/01-cover.png" alt="نموذج من أعمال التصميم الداخلي">
+    </div>
+  </div>
+</section>
+
+<!-- ============ DISCIPLINES ============ -->
+<section class="section-tight">
+  <div class="container">
+    <div class="eyebrow reveal">التخصصات</div>
+    <h2 class="display-2 reveal" style="margin-top:18px; --stagger:1;">الأساس تصميم المساحة، والهوية البصرية تكمّلها</h2>
+  </div>
+  <div class="container" style="margin-top:40px;">
+    <div class="discipline-grid">
+      <a href="interior-design.html" class="discipline reveal">
+        <div class="num">01 — INTERIOR</div>
+        <h3>تصميم داخلي</h3>
+        <p>شقق سكنية، فلل، مطابخ، مكاتب، ومساحات تجارية — تصميم وتنفيذ وإشراف حتى التسليم الكامل.</p>
+        <span class="go">استعرض الأعمال</span>
+      </a>
+      <a href="exterior-design.html" class="discipline reveal">
+        <div class="num">02 — EXTERIOR</div>
+        <h3>تصميم خارجي ولاندسكيب</h3>
+        <p>واجهات خارجية، حدائق، وتنسيق مواقع مع رندرات تمنح العميل رؤية واقعية قبل التنفيذ.</p>
+        <span class="go">استعرض الأعمال</span>
+      </a>
+      <a href="graphic-design.html" class="discipline reveal">
+        <div class="num">03 — GRAPHIC</div>
+        <h3>تصميم جرافيك</h3>
+        <p>هويات بصرية وبراندينج قايمة بذاتها — شعار، مطبوعات، أو محتوى سوشيال ميديا، وبتتكامل كمان مع مشاريعك الداخلية أو الخارجية لو حبيت.</p>
+        <span class="go">استعرض الأعمال</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED WORK ============ -->
+<section class="section">
+  <div class="container">
+    <div class="eyebrow reveal">أعمال مختارة</div>
+    <div class="reveal" style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:20px; margin-top:18px; --stagger:1;">
+      <h2 class="display-2">من أحدث المشاريع</h2>
+      <a href="interior-design.html" class="btn btn-dark">كل مشاريع الديكور</a>
+    </div>
+    <div class="featured-grid" data-featured></div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section-tight">
+  <div class="container">
+    <div class="eyebrow reveal">إزاي بنشتغل</div>
+    <h2 class="display-2 reveal" style="margin-top:18px; --stagger:1;">من أول فكرة لحد التسليم</h2>
+    <div class="process-grid">
+      <div class="process-step reveal">
+        <div class="ps-num">01</div>
+        <h3>استشارة أولى</h3>
+        <p>نتكلم عن فكرتك، المساحة أو المشروع، والميزانية المبدئية، ونحدد الخطوات الجاية مع بعض.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="ps-num">02</div>
+        <h3>المعاينة والتصميم</h3>
+        <p>معاينة الموقع (للديكور والخارجي) أو استلام بريف المشروع (للجرافيك)، ووضع الفكرة التصميمية والمخططات.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="ps-num">03</div>
+        <h3>العرض والاعتماد</h3>
+        <p>تقديم رندرات ثلاثية الأبعاد أو تصاميم مبدئية، وتفاصيل الخامات والألوان، لحد ما توافق على الشكل النهائي.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="ps-num">04</div>
+        <h3>التنفيذ والإشراف</h3>
+        <p>تنفيذ التشطيبات مع متابعة ميدانية أول بأول، أو إنتاج الملفات النهائية جاهزة للطباعة أو النشر.</p>
+      </div>
+      <div class="process-step reveal">
+        <div class="ps-num">05</div>
+        <h3>التسليم</h3>
+        <p>تسليم المساحة أو المشروع جاهز بالكامل، مع متابعة بعد التسليم لو احتجت أي تعديل.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROOM PLANNER PROMO ============ -->
+<section class="cta-band section-tight" style="background:linear-gradient(135deg, #1E1811 0%, #000 100%);">
+  <div class="container reveal">
+    <div>
+      <div class="eyebrow" style="color:var(--gold-soft);">خدمة مجانية جديدة</div>
+      <h2 class="display-2" style="margin-top:14px;">جرّب تصمم مساحتك بنفسك — مجانًا</h2>
+      <p class="lede">ارسم حوائط أوضتك، حدد الأبواب والشبابيك، وحط الأثاث في مكانه في دقايق، وابعتلنا التصميم نطوّره لك باحترافية.</p>
+    </div>
+    <a href="room-designer.html" class="btn btn-solid">جرّب الأداة الآن</a>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-band section-tight">
+  <div class="container reveal">
+    <div>
+      <h2 class="display-2">عندك مساحة جديدة أو فكرة تحتاج هوية؟</h2>
+      <p class="lede">لنحوّلها معًا إلى تصميم يعكس ذوقك ويدوم أثره.</p>
+    </div>
+    <a href="contact.html" class="btn btn-solid">احجز استشارة</a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="brand">
+          <img src="images/brand/logo.png" alt="RK Design" class="mark">
+          <span>Ramadan Kotb<small>DESIGN PORTFOLIO</small></span>
+        </div>
+        <p>مصمم ديكور وتصميم خارجي ولاندسكيب، وبيقدّم كمان خدمات تصميم جرافيك — تصميم يبدأ بفكرة وينتهي بمساحة أو هوية تُروى.</p>
+      </div>
+      <div>
+        <h4>تصفح</h4>
+        <ul>
+          <li><a href="interior-design.html">تصميم داخلي</a></li>
+          <li><a href="exterior-design.html">تصميم خارجي ولاندسكيب</a></li>
+          <li><a href="graphic-design.html">تصميم جرافيك</a></li>
+          <li><a href="about.html">من أنا</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>تواصل</h4>
+        <ul>
+          <li><a href="tel:01112630681">01112630681</a></li>
+          <li><a href="contact.html">صفحة التواصل</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>تابعني</h4>
+        <ul>
+          <li><a href="#">Behance</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Ramadan Kotb Design. جميع الحقوق محفوظة.</span>
+      <div class="social-row">
+        <a href="#" aria-label="Behance">Be</a>
+        <a href="#" aria-label="Instagram">In</a>
+        <a href="#" aria-label="LinkedIn">Li</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/projects-data.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Featured grid on home — 2 interior highlights
+  document.addEventListener("DOMContentLoaded", () => {
+    const wrap = document.querySelector("[data-featured]");
+    if(!wrap) return;
+    const featured = getProjectsByDiscipline("interior").slice(0,2);
+    wrap.innerHTML = featured.map(projectCardHTML).join("");
+    initReveal();
+  });
+</script>
+<div class="floating-actions">
+  <a href="https://wa.me/201112630681" target="_blank" rel="noopener" class="fab fab-whatsapp" aria-label="تواصل عبر واتساب">
+    <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2C6.486 2 2 6.486 2 12.004c0 1.994.583 3.85 1.588 5.41L2 22l4.727-1.564A9.943 9.943 0 0 0 12.004 22C17.522 22 22 17.514 22 12.004 22 6.486 17.522 2 12.004 2zm0 18.19a8.15 8.15 0 0 1-4.16-1.14l-.298-.177-2.804.928.937-2.735-.194-.282a8.15 8.15 0 0 1-1.29-4.38c0-4.508 3.667-8.176 8.185-8.176 4.51 0 8.176 3.668 8.176 8.176 0 4.518-3.667 8.186-8.176 8.186z"/></svg>
+  </a>
+  <a href="https://web.facebook.com/profile.php?id=61590444884849" target="_blank" rel="noopener" class="fab fab-facebook" aria-label="صفحتنا على فيسبوك">
+    <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"><path d="M22 12.06C22 6.505 17.523 2 12 2S2 6.505 2 12.06c0 5.02 3.657 9.184 8.438 9.94v-7.03H7.898v-2.91h2.54V9.845c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.878h2.773l-.443 2.91h-2.33V22c4.78-.756 8.437-4.92 8.437-9.94z"/></svg>
+  </a>
+</div>
+</body>
+</html>

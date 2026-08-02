@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة التحكم — RK-DESIGN STUDIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body { background: var(--bg); color: var(--ink); }
+    .admin-container { max-width: 900px; margin: 120px auto 60px; padding: 0 20px; }
+    .admin-card { background: var(--bg-panel); padding: 40px; border: 1px solid var(--line); margin-bottom: 32px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-weight: 700; font-size: 14px; margin-bottom: 8px; color: var(--gold); }
+    .form-control { width: 100%; padding: 14px 18px; border: 1px solid var(--line); background: var(--bg); color: var(--white); font-family: inherit; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <div class="brand-mark">RK</div>
+        <div class="brand-text">
+          <span>Ramadan Kotb</span>
+          <small>RK-DESIGN CONTROL PANEL</small>
+        </div>
+      </a>
+      <a href="index.html" class="btn-gold-outline">العودة للموقع ↗</a>
+    </div>
+  </header>
+
+  <main class="admin-container">
+    
+    <!-- LOGIN FORM -->
+    <div class="admin-card" id="loginSection">
+      <h2 style="font-size: 26px; color: var(--gold); margin-bottom: 12px;">تسجيل الدخول للوحة التحكم</h2>
+      <p style="color: var(--ink-soft); margin-bottom: 24px;">أدخل كلمة السر المحددة في Cloudflare Environment Variables.</p>
+      
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="password">كلمة السر</label>
+          <input type="password" id="password" class="form-control" placeholder="••••••••" required>
+        </div>
+        <div id="loginStatus" style="margin-bottom: 16px; font-weight: 700; color: #d9534f;"></div>
+        <button type="submit" class="btn btn-solid" style="width: 100%;">تسجيل الدخول ↗</button>
+      </form>
+    </div>
+
+    <!-- DASHBOARD PANEL -->
+    <div class="admin-card" id="dashboardSection" style="display: none;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
+        <div>
+          <h2 style="font-size: 26px; color: var(--gold);">إدارة مشاريع المعرض الحي</h2>
+          <p style="color: var(--ink-soft);">إضافة أو تعديل المشاريع بسهولة</p>
+        </div>
+        <button type="button" id="logoutBtn" class="btn btn-ghost">تسجيل الخروج</button>
+      </div>
+
+      <div style="margin-bottom: 32px;">
+        <button type="button" id="seedBtn" class="btn btn-solid">استيراد البيانات الأساسية إلى KV 🔄</button>
+      </div>
+
+      <hr class="rule" style="margin-bottom: 32px;">
+
+      <form id="projectForm" style="display: flex; flex-direction: column; gap: 20px;">
+        <h3 style="font-size: 20px; color: var(--white);">إضافة / تعديل مشروع</h3>
+        
+        <div class="form-group">
+          <label>عنوان المشروع *</label>
+          <input type="text" id="pTitle" class="form-control" required placeholder="عنوان المشروع">
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+          <div class="form-group">
+            <label>القسم *</label>
+            <select id="pDiscipline" class="form-control">
+              <option value="interior">تصميم داخلي</option>
+              <option value="exterior">تصميم خارجي ولاندسكيب</option>
+              <option value="graphic">تصميم جرافيك وهوية</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>التصنيف</label>
+            <input type="text" id="pCategory" class="form-control" placeholder="شقق / فلل / مطابخ / حمامات">
+          </div>
+        </div>
+
+        <!-- ═══ UPLOAD ZONE ═══ -->
+        <div class="form-group">
+          <label style="font-size:14px;font-weight:700;color:var(--gold);display:block;margin-bottom:10px;">
+            📎 رفع صور وفيديو
+            <span style="color:var(--ink-soft);font-weight:400;font-size:12px;margin-right:8px;">JPG·PNG·WebP·MP4·MOV — حد أقصى 10MB صور / 50MB فيديو</span>
+          </label>
+
+          <div id="dropZone" onclick="document.getElementById('fileInput').click()" ondragover="event.preventDefault();this.style.borderColor='var(--gold)'" ondragleave="this.style.borderColor='var(--line)'" ondrop="handleDrop(event)" style="border:2px dashed var(--line);padding:36px 20px;text-align:center;cursor:pointer;transition:.3s;background:var(--bg);margin-bottom:14px;">
+            <div style="font-size:30px;margin-bottom:10px;">📤</div>
+            <p style="color:var(--white);font-size:15px;font-weight:700;margin-bottom:4px;">اسحب الملفات هنا أو اضغط للاختيار</p>
+            <p style="color:var(--ink-soft);font-size:12px;">صور (JPG·PNG·WebP) أو فيديو (MP4·MOV·WebM)</p>
+            <input type="file" id="fileInput" multiple accept="image/*,video/mp4,video/webm,video/quicktime" style="display:none" onchange="handleFiles(this.files)">
+          </div>
+
+          <div id="uploadProgress" style="display:none;margin-bottom:14px;">
+            <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--ink-soft);margin-bottom:6px;">
+              <span id="progressLabel">جارٍ الرفع...</span>
+              <span id="progressPct">0%</span>
+            </div>
+            <div style="background:var(--bg);border:1px solid var(--line);border-radius:20px;height:5px;overflow:hidden;">
+              <div id="progressBar" style="height:100%;background:linear-gradient(90deg,var(--gold),#e8c547);width:0%;transition:width .3s;"></div>
+            </div>
+          </div>
+
+          <div id="uploadedGrid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:10px;margin-bottom:14px;"></div>
+
+          <div style="display:flex;gap:10px;align-items:flex-end;">
+            <div style="flex:1;">
+              <label style="font-size:12px;color:var(--ink-soft);font-weight:600;display:block;margin-bottom:5px;">رابط صورة الغلاف (يتعبّى تلقائياً)</label>
+              <input type="text" id="pCover" class="form-control" placeholder="سيتم تعبئته بعد رفع أول صورة...">
+            </div>
+            <div id="coverPreview" style="width:64px;height:48px;border:1px solid var(--line);overflow:hidden;flex-shrink:0;display:none;">
+              <img id="coverPreviewImg" style="width:100%;height:100%;object-fit:cover;">
+            </div>
+          </div>
+          <textarea id="pGallery" style="display:none;"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-solid" style="padding:16px;width:100%;font-size:15px;">حفظ المشروع ↗</button>
+      </form>
+
+    </div>
+
+  </main>
+
+  <script>
+    const loginSection = document.getElementById('loginSection');
+    const dashboardSection = document.getElementById('dashboardSection');
+    const loginForm = document.getElementById('loginForm');
+    const loginStatus = document.getElementById('loginStatus');
+    const logoutBtn = document.getElementById('logoutBtn');
+    const seedBtn = document.getElementById('seedBtn');
+
+    async function checkAuth() {
+      try {
+        const res = await fetch('/api/me');
+        if (res.ok) {
+          loginSection.style.display = 'none';
+          dashboardSection.style.display = 'block';
+        }
+      } catch(e) {}
+    }
+
+    loginForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const password = document.getElementById('password').value;
+      try {
+        const res = await fetch('/api/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ password })
+        });
+        if (res.ok) {
+          loginSection.style.display = 'none';
+          dashboardSection.style.display = 'block';
+        } else {
+          loginStatus.textContent = 'كلمة السر غير صحيحة';
+        }
+      } catch(err) {
+        loginStatus.textContent = 'حدث خطأ في الاتصال';
+      }
+    });
+
+    logoutBtn.addEventListener('click', async () => {
+      await fetch('/api/logout', { method: 'POST' });
+      location.reload();
+    });
+
+    seedBtn.addEventListener('click', async () => {
+      try {
+        const res = await fetch('/api/seed', { method: 'POST' });
+        if (res.ok) alert('تم استيراد البيانات إلى KV بنجاح!');
+        else alert('تعذر استيراد البيانات.');
+      } catch(e) {
+        alert('حدث خطأ');
+      }
+    });
+
+    checkAuth();
+
+    // ═══════════════════════════════════════
+    // SAVE PROJECT
+    // ═══════════════════════════════════════
+    document.getElementById('projectForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const title    = document.getElementById('pTitle').value.trim();
+      const disc     = document.getElementById('pDiscipline')?.value || 'interior';
+      const category = document.getElementById('pCategory').value.trim();
+      const cover    = document.getElementById('pCover').value.trim();
+      const galleryRaw = document.getElementById('pGallery').value.trim();
+      const gallery  = galleryRaw ? galleryRaw.split('\n').filter(u => u.trim()) : [];
+
+      if (!title) { alert('اكتب عنوان المشروع أولاً'); return; }
+      if (!cover)  { alert('ارفع صورة غلاف أولاً'); return; }
+
+      const submitBtn = e.target.querySelector('[type=submit]');
+      submitBtn.textContent = 'جارٍ الحفظ...';
+      submitBtn.disabled = true;
+
+      try {
+        const res = await fetch('/api/projects', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ title, discipline: disc, category, cover, gallery })
+        });
+        const data = await res.json();
+        if (data.ok || res.ok) {
+          alert('✅ تم حفظ المشروع بنجاح!');
+          e.target.reset();
+          uploadedUrls  = [];
+          uploadedTypes = {};
+          document.getElementById('uploadedGrid').innerHTML = '';
+          document.getElementById('coverPreview').style.display = 'none';
+        } else {
+          alert('❌ ' + (data.error || 'فشل الحفظ'));
+        }
+      } catch(err) {
+        alert('❌ خطأ في الاتصال: ' + err.message);
+      } finally {
+        submitBtn.textContent = 'حفظ المشروع ↗';
+        submitBtn.disabled = false;
+      }
+    });
+
+    // ═══════════════════════════════════════
+    // UPLOAD LOGIC
+    // ═══════════════════════════════════════
+    let uploadedUrls   = [];  // كل الروابط المرفوعة
+    let uploadedTypes  = {};  // url → "image" | "video"
+
+    function handleDrop(e) {
+      e.preventDefault();
+      document.getElementById('dropZone').style.borderColor = 'var(--line)';
+      handleFiles(e.dataTransfer.files);
+    }
+
+    async function handleFiles(files) {
+      if (!files || !files.length) return;
+      const arr = Array.from(files);
+
+      const progress  = document.getElementById('uploadProgress');
+      const bar       = document.getElementById('progressBar');
+      const pct       = document.getElementById('progressPct');
+      const label     = document.getElementById('progressLabel');
+      const grid      = document.getElementById('uploadedGrid');
+
+      progress.style.display = 'block';
+
+      for (let i = 0; i < arr.length; i++) {
+        const file = arr[i];
+        label.textContent = `جارٍ رفع: ${file.name} (${i+1}/${arr.length})`;
+        pct.textContent   = `${Math.round((i/arr.length)*100)}%`;
+        bar.style.width   = `${Math.round((i/arr.length)*100)}%`;
+
+        try {
+          const fd = new FormData();
+          fd.append('file', file);
+
+          const res  = await fetch('/api/upload', { method: 'POST', body: fd });
+          const data = await res.json();
+
+          if (data.ok) {
+            uploadedUrls.push(data.url);
+            uploadedTypes[data.url] = data.type;
+            addToGrid(data.url, data.type, file.name);
+
+            // أول صورة → غلاف
+            if (uploadedUrls.filter(u => uploadedTypes[u]==='image').length === 1 && data.type==='image') {
+              document.getElementById('pCover').value = data.url;
+              const prev = document.getElementById('coverPreview');
+              document.getElementById('coverPreviewImg').src = data.url;
+              prev.style.display = 'block';
+            }
+            // تحديث الـ gallery
+            document.getElementById('pGallery').value = uploadedUrls.join('\n');
+          } else {
+            addErrorToGrid(file.name, data.error || 'فشل الرفع');
+          }
+        } catch(err) {
+          addErrorToGrid(file.name, 'خطأ في الاتصال');
+        }
+      }
+
+      pct.textContent = '100%';
+      bar.style.width = '100%';
+      label.textContent = `✅ تم رفع ${arr.length} ملف بنجاح`;
+      setTimeout(() => { progress.style.display = 'none'; }, 3000);
+    }
+
+    function addToGrid(url, type, name) {
+      const grid = document.getElementById('uploadedGrid');
+      const div  = document.createElement('div');
+      div.style.cssText = 'position:relative;border:1px solid var(--line);overflow:hidden;background:var(--bg-panel);';
+
+      const isVideo = type === 'video';
+      div.innerHTML = `
+        <div style="aspect-ratio:4/3;overflow:hidden;background:#111;display:flex;align-items:center;justify-content:center;">
+          ${isVideo
+            ? `<video src="${url}" style="width:100%;height:100%;object-fit:cover;" muted preload="metadata"></video>`
+            : `<img src="${url}" style="width:100%;height:100%;object-fit:cover;" loading="lazy">`
+          }
+        </div>
+        <div style="padding:6px 8px;">
+          <p style="font-size:11px;color:var(--ink-soft);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin:0;">${isVideo ? '🎬' : '🖼️'} ${name.slice(0,20)}</p>
+        </div>
+        <button onclick="removeFile('${url}',this.closest('div[style]'))" title="حذف" style="position:absolute;top:4px;left:4px;background:rgba(0,0,0,.7);border:none;color:#fff;width:22px;height:22px;border-radius:50%;cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;">✕</button>
+        ${!isVideo ? `<button onclick="setCover('${url}')" title="اجعلها الغلاف" style="position:absolute;top:4px;right:4px;background:rgba(197,160,89,.85);border:none;color:#000;font-size:10px;font-weight:700;padding:2px 6px;cursor:pointer;border-radius:2px;">غلاف</button>` : ''}
+      `;
+      grid.appendChild(div);
+    }
+
+    function addErrorToGrid(name, errMsg) {
+      const grid = document.getElementById('uploadedGrid');
+      const div  = document.createElement('div');
+      div.style.cssText = 'border:1px solid #e57373;padding:10px;background:rgba(229,115,115,.08);font-size:12px;color:#e57373;';
+      div.textContent = `❌ ${name}: ${errMsg}`;
+      grid.appendChild(div);
+    }
+
+    function removeFile(url, el) {
+      uploadedUrls = uploadedUrls.filter(u => u !== url);
+      delete uploadedTypes[url];
+      document.getElementById('pGallery').value = uploadedUrls.join('\n');
+      el.remove();
+      // لو الغلاف اتحذف
+      if (document.getElementById('pCover').value === url) {
+        const nextImg = uploadedUrls.find(u => uploadedTypes[u]==='image');
+        document.getElementById('pCover').value = nextImg || '';
+        if (nextImg) document.getElementById('coverPreviewImg').src = nextImg;
+        else document.getElementById('coverPreview').style.display='none';
+      }
+    }
+
+    function setCover(url) {
+      document.getElementById('pCover').value = url;
+      document.getElementById('coverPreviewImg').src = url;
+      document.getElementById('coverPreview').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
