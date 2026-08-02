@@ -740,13 +740,13 @@ const PROJECTS_FALLBACK = [
     "featured": false
   },
   {
-    "id": "ريبسشن-الشروق-d8b1d98a",
+    "id": "شقة-الشروق-d8b1d98a",
     "discipline": "interior",
-    "category": "",
-    "title": "ريبسشن الشروق",
-    "location": "",
-    "area": null,
-    "year": "",
+    "category": "شقق سكنية",
+    "title": "شقة الشروق",
+    "location": "الشروق",
+    "area": "120م²",
+    "year": "2023",
     "cover": "images/projects-by-name/interior/ريبسشن الشروق/ريبسشن الشروق (1).png",
     "before": null,
     "gallery": [
@@ -754,21 +754,30 @@ const PROJECTS_FALLBACK = [
       "images/projects-by-name/interior/ريبسشن الشروق/ريبسشن الشروق (3).png",
       "images/projects-by-name/interior/ريبسشن الشروق/ريبسشن الشروق (4).png"
     ],
-    "excerpt": "مشروع ريبسشن الشروق",
-    "description": "مشروع ريبسشن الشروق.",
-    "idea": "",
-    "materials": [],
-    "tags": [],
-    "featured": false
+    "excerpt": "شقة بمساحة 80 مترًا سُلّمت على المسطح، وكان الهدف تصميم صالة استقبال تجمع بين البساطة والدفء دون إثقال المساحة. اعتمدنا ",
+    "description": "شقة بمساحة 80 مترًا سُلّمت على المسطح، وكان الهدف تصميم صالة استقبال تجمع بين البساطة والدفء دون إثقال المساحة. اعتمدنا على تناغم الألوان المحايدة، إضاءة مخفية بالأسقف الجبسية، وقطع أثاث مختارة بعناية لتمنح إحساسًا بالرحابة رغم المساحة المحدودة.",
+    "idea": "الفكرة التصميمية قامت على تبسيط الخطوط وتوزيع الإضاءة بشكل يخلق طبقات بصرية هادئة، مع لوحات ديكورية هندسية تكسر رتابة الحائط الرئيسي وتمنح الصالة طابعًا مميزًا.",
+    "materials": [
+      "دهانات مطفية فاخرة",
+      "أرضيات باركيه",
+      "أسقف جبسية بإضاءة مخفية",
+      "أثاث تنجيد قماش"
+    ],
+    "tags": [
+      "صالة استقبال",
+      "120 متر",
+      "تسليم كامل"
+    ],
+    "featured": true
   },
   {
-    "id": "ريسبشن-مطبخ-امريكا-مدينة-بدر-d8b1d98a",
+    "id": "ريسبشن-مع-مطبخ-امريكا-مدينة-بدر-d8b1d98a",
     "discipline": "interior",
-    "category": "",
-    "title": "ريسبشن & مطبخ امريكا مدينة  بدر",
-    "location": "",
-    "area": null,
-    "year": "",
+    "category": "شقق سكنية & مطابخ",
+    "title": "ريسبشن  مع مطبخ امريكا مدينة  بدر",
+    "location": "مدينة بدر",
+    "area": "100م²",
+    "year": "2023",
     "cover": "images/projects-by-name/interior/ريسبشن & مطبخ امريكا مدينة  بدر/ريسبشن  مع مطبخ امريكا مدينة  بدر (1).png",
     "before": null,
     "gallery": [
@@ -777,42 +786,55 @@ const PROJECTS_FALLBACK = [
       "images/projects-by-name/interior/ريسبشن & مطبخ امريكا مدينة  بدر/ريسبشن  مع مطبخ امريكا مدينة  بدر (4).png",
       "images/projects-by-name/interior/ريسبشن & مطبخ امريكا مدينة  بدر/ريسبشن  مع مطبخ امريكا مدينة  بدر (5).png"
     ],
-    "excerpt": "مشروع ريسبشن & مطبخ امريكا مدينة  بدر",
-    "description": "مشروع ريسبشن & مطبخ امريكا مدينة  بدر.",
+    "excerpt": "شقة بمساحة 80 مترًا سُلّمت على المسطح، وكان",
+    "description": "شقة بمساحة 80 مترًا سُلّمت على المسطح، وكان",
     "idea": "",
     "materials": [],
-    "tags": [],
-    "featured": false
+    "tags": [
+      "صالة استقبال",
+      "100متر",
+      "تسليم كامل"
+    ],
+    "featured": true
   },
   {
-    "id": "ريسبشن-طنطا-d8b1d98a",
+    "id": "شقة-طنطا-d8b1d98a",
     "discipline": "interior",
-    "category": "",
-    "title": "ريسبشن طنطا",
-    "location": "",
-    "area": null,
-    "year": "",
+    "category": "شقق سكنية",
+    "title": "شقة طنطا",
+    "location": "طنطا",
+    "area": "80 م²",
+    "year": "2023",
     "cover": "images/projects-by-name/interior/ريسبشن طنطا/ريسبشن طنطا (1).png",
     "before": null,
     "gallery": [
       "images/projects-by-name/interior/ريسبشن طنطا/ريسبشن طنطا (2).png",
       "images/projects-by-name/interior/ريسبشن طنطا/ريسبشن طنطا (3).png"
     ],
-    "excerpt": "مشروع ريسبشن طنطا",
-    "description": "مشروع ريسبشن طنطا.",
-    "idea": "",
-    "materials": [],
-    "tags": [],
-    "featured": false
+    "excerpt": "شقة بمساحة 80 مترًا سُلّمت على المسطح، وكان الهدف تصميم صالة استقبال تجمع بين البساطة والدفء دون إثقال المساحة. اعتمدنا ",
+    "description": "شقة بمساحة 80 مترًا سُلّمت على المسطح، وكان الهدف تصميم صالة استقبال تجمع بين البساطة والدفء دون إثقال المساحة. اعتمدنا على تناغم الألوان المحايدة، إضاءة مخفية بالأسقف الجبسية، وقطع أثاث مختارة بعناية لتمنح إحساسًا بالرحابة رغم المساحة المحدودة.",
+    "idea": "الفكرة التصميمية قامت على تبسيط الخطوط وتوزيع الإضاءة بشكل يخلق طبقات بصرية هادئة، مع لوحات ديكورية هندسية تكسر رتابة الحائط الرئيسي وتمنح الصالة طابعًا مميزًا.",
+    "materials": [
+      "دهانات مطفية فاخرة",
+      "أرضيات باركيه",
+      "أسقف جبسية بإضاءة مخفية",
+      "أثاث تنجيد قماش"
+    ],
+    "tags": [
+      "صالة استقبال",
+      "80 متر",
+      "تسليم كامل"
+    ],
+    "featured": true
   },
   {
     "id": "شركة-meem-مكاتب-اداريه-d8b4d8b1",
     "discipline": "interior",
-    "category": "",
+    "category": "مكاتب ادارية",
     "title": "شركة MEEM مكاتب اداريه",
-    "location": "",
-    "area": null,
-    "year": "",
+    "location": "المنصورة",
+    "area": "140م²",
+    "year": "2026",
     "cover": "images/projects-by-name/interior/شركة MEEM مكاتب اداريه/01-cover.webp",
     "before": null,
     "gallery": [
@@ -825,12 +847,16 @@ const PROJECTS_FALLBACK = [
       "images/projects-by-name/interior/شركة MEEM مكاتب اداريه/شركة ميم (4).webp",
       "images/projects-by-name/interior/شركة MEEM مكاتب اداريه/شركو ميم (2).webp"
     ],
-    "excerpt": "مشروع شركة MEEM مكاتب اداريه",
-    "description": "مشروع شركة MEEM مكاتب اداريه.",
+    "excerpt": "شقة بمساحة 80 مترًا سُلّمت على المسطح، وكان الهدف تصميم دور اداري يشمل مكاتب ادارية وغرفة اجتماعات",
+    "description": "شقة بمساحة 80 مترًا سُلّمت على المسطح، وكان الهدف تصميم دور اداري يشمل مكاتب ادارية وغرفة اجتماعات",
     "idea": "",
     "materials": [],
-    "tags": [],
-    "featured": false
+    "tags": [
+      "صالة استقبال",
+      "140متر",
+      "تسليم كامل"
+    ],
+    "featured": true
   },
   {
     "id": "شقة-عائلية-مدينة-بدر-d8b4d982",
@@ -1069,31 +1095,40 @@ const PROJECTS_FALLBACK = [
   {
     "id": "غرفة-نوم-ماستر-الرحاب-d8bad8b1",
     "discipline": "interior",
-    "category": "",
-    "title": "غرفة نوم ماستر الرحاب",
-    "location": "",
-    "area": null,
-    "year": "",
+    "category": "غرف نوم",
+    "title": "غرفة نوم ماستر— الرحاب",
+    "location": "الرحاب",
+    "area": "150 م²",
+    "year": "2025",
     "cover": "images/projects-by-name/interior/غرفة نوم ماستر الرحاب/غرفة نوم ماستر الرحاب (1).png",
     "before": null,
     "gallery": [
       "images/projects-by-name/interior/غرفة نوم ماستر الرحاب/غرفة نوم ماستر الرحاب (2).png"
     ],
-    "excerpt": "مشروع غرفة نوم ماستر الرحاب",
-    "description": "مشروع غرفة نوم ماستر الرحاب.",
-    "idea": "",
-    "materials": [],
-    "tags": [],
-    "featured": false
+    "excerpt": "غرفة نوم رئيسية ضمن شقة بمساحة 150 مترًا، صُممت بلمسة كلاسيكية معاصرة تجمع بين الخشب الداكن والتفاصيل الذهبية الخفيفة. ط",
+    "description": "غرفة نوم رئيسية ضمن شقة بمساحة 150 مترًا، صُممت بلمسة كلاسيكية معاصرة تجمع بين الخشب الداكن والتفاصيل الذهبية الخفيفة. طاولة تسريحة مطلة على النافذة، وستائر مزدوجة تمنح الغرفة خصوصية وإحساسًا فندقيًا.",
+    "idea": "التصميم يوازن بين الطابع الكلاسيكي في القطع الخشبية المفرّغة والإحساس المعاصر في اختيار الألوان الترابية والإضاءة المخفية أعلى تجهيزة السرير.",
+    "materials": [
+      "خشب زان مصمت",
+      "قماش مخمل للستائر",
+      "أرضيات باركيه",
+      "إضاءة مخفية علوية"
+    ],
+    "tags": [
+      "غرفة نوم",
+      "150 متر",
+      "تسليم كامل"
+    ],
+    "featured": true
   },
   {
     "id": "غرفة-نوم-ومعيشة-التجمع-d8bad8b1",
     "discipline": "interior",
-    "category": "",
+    "category": "غرف نوم",
     "title": "غرفة نوم ومعيشة التجمع",
-    "location": "",
-    "area": null,
-    "year": "",
+    "location": "التجمع الخامس",
+    "area": "150 م²",
+    "year": "2024",
     "cover": "images/projects-by-name/interior/غرفة نوم ومعيشة التجمع/غرفة نوم ومعيشة التجمع (5).png",
     "before": null,
     "gallery": [
@@ -1102,21 +1137,30 @@ const PROJECTS_FALLBACK = [
       "images/projects-by-name/interior/غرفة نوم ومعيشة التجمع/غرفة نوم ومعيشة التجمع (8).png",
       "images/projects-by-name/interior/غرفة نوم ومعيشة التجمع/غرفة نوم ومعيشة التجمع (9).png"
     ],
-    "excerpt": "مشروع غرفة نوم ومعيشة التجمع",
-    "description": "مشروع غرفة نوم ومعيشة التجمع.",
-    "idea": "",
-    "materials": [],
-    "tags": [],
-    "featured": false
+    "excerpt": "غرفة نوم رئيسية ضمن شقة بمساحة 150 مترًا، صُممت بلمسة مودرن معاصرة تجمع بين الخشب الداكن والتفاصيل الذهبية الخفيفة. طاول",
+    "description": "غرفة نوم رئيسية ضمن شقة بمساحة 150 مترًا، صُممت بلمسة مودرن معاصرة تجمع بين الخشب الداكن والتفاصيل الذهبية الخفيفة. طاولة تسريحة مطلة على النافذة، وستائر مزدوجة تمنح الغرفة خصوصية وإحساسًا فندقيًا.",
+    "idea": "التصميم يوازن بين الطابع الكلاسيكي في القطع الخشبية المفرّغة والإحساس المعاصر في اختيار الألوان الترابية والإضاءة المخفية أعلى تجهيزة السرير.",
+    "materials": [
+      "خشب زان مصمت",
+      "قماش مخمل للستائر",
+      "أرضيات باركيه",
+      "إضاءة مخفية علوية"
+    ],
+    "tags": [
+      "غرفة نوم",
+      "150 متر",
+      "تسليم كامل"
+    ],
+    "featured": true
   },
   {
     "id": "كتالوج-حمام-ماستر-d983d8aa",
     "discipline": "interior",
-    "category": "",
+    "category": "حمامات",
     "title": "كتالوج حمام ماستر",
     "location": "",
     "area": null,
-    "year": "",
+    "year": "2026",
     "cover": "images/projects-by-name/interior/كتالوج حمام ماستر/حمام ماستر  (1).jpg",
     "before": null,
     "gallery": [
@@ -1127,11 +1171,13 @@ const PROJECTS_FALLBACK = [
       "images/projects-by-name/interior/كتالوج حمام ماستر/حمام ماستر  (4).png",
       "images/projects-by-name/interior/كتالوج حمام ماستر/حمام ماستر  (5).png"
     ],
-    "excerpt": "مشروع كتالوج حمام ماستر",
-    "description": "مشروع كتالوج حمام ماستر.",
+    "excerpt": "تصميم حمام بخامات عصرية سهلة التنظيف، مع كابينة شاور مع بديل الخشب مع إضاءة هادئة تمنح المساحة إحساسًا فندقيًا مريحًا.",
+    "description": "تصميم حمام بخامات عصرية سهلة التنظيف، مع كابينة شاور مع بديل الخشب مع إضاءة هادئة تمنح المساحة إحساسًا فندقيًا مريحًا.",
     "idea": "",
     "materials": [],
-    "tags": [],
+    "tags": [
+      "حمامات"
+    ],
     "featured": false
   },
   {
@@ -1187,22 +1233,24 @@ const PROJECTS_FALLBACK = [
   {
     "id": "مطبخ-الشروق-d985d8b7",
     "discipline": "interior",
-    "category": "",
-    "title": "مطبخ -  الشروق",
-    "location": "",
+    "category": "مطابخ",
+    "title": "مطبخ الشروق",
+    "location": "الشروق",
     "area": null,
-    "year": "",
+    "year": "2025",
     "cover": "images/projects-by-name/interior/مطبخ -  الشروق/12-photo (1).png",
     "before": null,
     "gallery": [
       "images/projects-by-name/interior/مطبخ -  الشروق/12-photo (2).png",
       "images/projects-by-name/interior/مطبخ -  الشروق/12-photo (3).png"
     ],
-    "excerpt": "مشروع مطبخ -  الشروق",
-    "description": "مشروع مطبخ -  الشروق.",
+    "excerpt": "تصميم مطبخ كلاسيكى يركّز على العملية في التوزيع، مع وحدات تخزين مدروسة وخامات سهلة الصيانة.",
+    "description": "تصميم مطبخ كلاسيكى يركّز على العملية في التوزيع، مع وحدات تخزين مدروسة وخامات سهلة الصيانة.",
     "idea": "",
     "materials": [],
-    "tags": [],
+    "tags": [
+      "مطابخ"
+    ],
     "featured": false
   },
   {
@@ -1299,13 +1347,13 @@ const PROJECTS_FALLBACK = [
     "featured": false
   },
   {
-    "id": "معرض-النخبة-للسيارات-السعوديه-d985d8b9",
+    "id": "معرض-النخبة-للسيارات-d985d8b9",
     "discipline": "interior",
-    "category": "",
-    "title": "معرض النخبة  للسيارات السعوديه",
-    "location": "",
-    "area": null,
-    "year": "",
+    "category": "معارض",
+    "title": "معرض النخبة للسيارات",
+    "location": "السعوديه",
+    "area": "80 م²",
+    "year": "2025",
     "cover": "images/projects-by-name/interior/معرض النخبة  للسيارات السعوديه/معرض النخبة  السيارات (1) السعوديه.jpg",
     "before": null,
     "gallery": [
@@ -1314,42 +1362,42 @@ const PROJECTS_FALLBACK = [
       "images/projects-by-name/interior/معرض النخبة  للسيارات السعوديه/معرض النخبة  السيارات (2) السعوديه.jpg",
       "images/projects-by-name/interior/معرض النخبة  للسيارات السعوديه/معرض النخبة  السيارات (2) السعوديه.webp"
     ],
-    "excerpt": "مشروع معرض النخبة  للسيارات السعوديه",
-    "description": "مشروع معرض النخبة  للسيارات السعوديه.",
+    "excerpt": "مشروع معرض النخبة للسيارات",
+    "description": "مشروع معرض النخبة للسيارات.",
     "idea": "",
     "materials": [],
     "tags": [],
     "featured": false
   },
   {
-    "id": "مكتب-اداري-الحي-السابع-d985d983",
+    "id": "مكتب-اداري-d985d983",
     "discipline": "interior",
-    "category": "",
-    "title": "مكتب اداري - الحي السابع",
-    "location": "",
-    "area": null,
-    "year": "",
+    "category": "مكاتب ادارية",
+    "title": "مكتب اداري",
+    "location": "الحي السابع مدينة نصر",
+    "area": "35م²",
+    "year": "2024",
     "cover": "images/projects-by-name/interior/مكتب اداري - الحي السابع/مكتب اداري الحي السابع (1).png",
     "before": null,
     "gallery": [
       "images/projects-by-name/interior/مكتب اداري - الحي السابع/مكتب اداري الحي السابع (2).png",
       "images/projects-by-name/interior/مكتب اداري - الحي السابع/مكتب اداري الحي السابع (3).png"
     ],
-    "excerpt": "مشروع مكتب اداري - الحي السابع",
-    "description": "مشروع مكتب اداري - الحي السابع.",
+    "excerpt": "مشروع مكتب اداري",
+    "description": "مشروع مكتب اداري.",
     "idea": "",
     "materials": [],
     "tags": [],
     "featured": false
   },
   {
-    "id": "مكتب-حسابات-مدينة-نصر-d985d983",
+    "id": "مكتب-حسابات-d985d983",
     "discipline": "interior",
-    "category": "",
-    "title": "مكتب حسابات-  مدينة نصر",
-    "location": "",
-    "area": null,
-    "year": "",
+    "category": "مكاتب ادارية",
+    "title": "مكتب حسابات",
+    "location": "مدينة نصر",
+    "area": "30م²",
+    "year": "2022",
     "cover": "images/projects-by-name/interior/مكتب حسابات-  مدينة نصر/مكتب حسابات مدينة نصر (1).png",
     "before": null,
     "gallery": [
@@ -1357,8 +1405,8 @@ const PROJECTS_FALLBACK = [
       "images/projects-by-name/interior/مكتب حسابات-  مدينة نصر/مكتب حسابات مدينة نصر (3).png",
       "images/projects-by-name/interior/مكتب حسابات-  مدينة نصر/مكتب حسابات مدينة نصر (4).png"
     ],
-    "excerpt": "مشروع مكتب حسابات-  مدينة نصر",
-    "description": "مشروع مكتب حسابات-  مدينة نصر.",
+    "excerpt": "مشروع مكتب حسابات",
+    "description": "مشروع مكتب حسابات.",
     "idea": "",
     "materials": [],
     "tags": [],
