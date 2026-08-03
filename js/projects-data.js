@@ -843,9 +843,7 @@ const PROJECTS_FALLBACK = [
       "images/projects-by-name/interior/شركة MEEM مكاتب اداريه/شركة ميم (2).png",
       "images/projects-by-name/interior/شركة MEEM مكاتب اداريه/شركة ميم (2).webp",
       "images/projects-by-name/interior/شركة MEEM مكاتب اداريه/شركة ميم (3).png",
-      "images/projects-by-name/interior/شركة MEEM مكاتب اداريه/شركة ميم (3).webp",
-      "images/projects-by-name/interior/شركة MEEM مكاتب اداريه/شركة ميم (4).webp",
-      "images/projects-by-name/interior/شركة MEEM مكاتب اداريه/شركو ميم (2).webp"
+      "images/projects-by-name/interior/شركة MEEM مكاتب اداريه/شركة ميم (3).webp"
     ],
     "excerpt": "شقة بمساحة 80 مترًا سُلّمت على المسطح، وكان الهدف تصميم دور اداري يشمل مكاتب ادارية وغرفة اجتماعات",
     "description": "شقة بمساحة 80 مترًا سُلّمت على المسطح، وكان الهدف تصميم دور اداري يشمل مكاتب ادارية وغرفة اجتماعات",
