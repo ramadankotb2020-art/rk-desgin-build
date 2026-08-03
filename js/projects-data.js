@@ -1254,6 +1254,31 @@ const PROJECTS_FALLBACK = [
     "featured": false
   },
   {
+    "id": "مطبخ-صغير-d985d8b7",
+    "discipline": "interior",
+    "category": "مطابخ",
+    "title": "مطبخ صغير",
+    "location": "المرج",
+    "area": null,
+    "year": "2026",
+    "cover": "images/projects-by-name/interior/مطبخ صغير/01-cover.png",
+    "before": null,
+    "gallery": [
+      "images/projects-by-name/interior/مطبخ صغير/PHOTO- (1).png",
+      "images/projects-by-name/interior/مطبخ صغير/PHOTO- (2).png",
+      "images/projects-by-name/interior/مطبخ صغير/PHOTO- (3).png",
+      "images/projects-by-name/interior/مطبخ صغير/PHOTO- (4).png"
+    ],
+    "excerpt": "تصميم مطبخ كلاسيكى يركّز على العملية في التوزيع، مع وحدات تخزين مدروسة وخامات سهلة الصيانة.",
+    "description": "تصميم مطبخ كلاسيكى يركّز على العملية في التوزيع، مع وحدات تخزين مدروسة وخامات سهلة الصيانة.",
+    "idea": "",
+    "materials": [],
+    "tags": [
+      "مطابخ"
+    ],
+    "featured": false
+  },
+  {
     "id": "مطبخ-عصري-d985d8b7",
     "discipline": "interior",
     "category": "مطابخ",
