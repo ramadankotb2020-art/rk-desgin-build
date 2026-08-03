@@ -4,12 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>تفاصيل المشروع — رمضان قطب | RK Design Studio</title>
-  <meta name="keywords" content="مشاريع رمضان قطب، تصميم داخلي، جرافيك ديزاين، أعمال مصمم">
   <meta name="description" content="اكتشف تفاصيل أعمال رمضان قطب في التصميم الداخلي والخارجي والجرافيك ديزاين.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
   <meta name="robots" content="index, follow">
   <meta name="author" content="رمضان قطب — RK Design Studio">
   <link rel="canonical" href="https://rk-design.com/project.html">
@@ -22,129 +17,107 @@
   <meta property="og:site_name" content="RK Design Studio">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="مشروع — رمضان قطب">
-  <meta name="twitter:description" content="اكتشف تفاصيل أعمال رمضان قطب في التصميم الداخلي والخارجي والجرافيك ديزاين.">
   <meta name="twitter:image" content="https://rk-design.com/images/brand/cover-banner-v2.png">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="alternate icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="favicon.svg">
   <meta name="theme-color" content="#c5a059">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div id="page-loader" aria-hidden="true"><div class="loader-mark">RK</div></div>
+  <div id="page-loader" aria-hidden="true">
+    <div class="loader-inner"><div class="loader-mark">RK</div><div class="loader-bar"><div class="loader-bar-fill"></div></div></div>
+  </div>
 
-  <!-- HEADER -->
   <header class="site-header" id="site-header">
     <div class="container nav">
-      <a href="index.html" class="brand">
-        <div class="brand-mark">RK</div>
-        <div class="brand-text">
-          <span>Ramadan Kotb</span>
-          <small>DESIGN PORTFOLIO</small>
-        </div>
-      </a>
-      <nav class="nav-links">
+      <a href="index.html" class="brand"><div class="brand-mark">RK</div><div class="brand-text"><span>رمضان قطب</span><small>DESIGN STUDIO</small></div></a>
+      <nav class="nav-links" id="nav-links">
         <a href="index.html">الرئيسية</a>
-        <a href="about.html">من نحن</a>
-        <a href="interior-design.html">خدماتنا</a>
-        <a href="interior-design.html">معرض الأعمال</a>
-        <a href="room-designer.html">صمم مساحتك 2D</a>
-        <a href="contact.html">اتصل بنا</a>
+        <a href="about.html">عن رمضان</a>
+        <a href="interior-design.html">التصميم الداخلي والخارجي</a>
+        <a href="graphic-design.html">الجرافيك والبراندينج</a>
+        <a href="room-designer.html">مخطط 2D</a>
+        <a href="contact.html">تواصل معي</a>
       </nav>
       <div class="nav-actions">
-        <button type="button" class="icon-btn" data-search-trigger aria-label="البحث">🔍</button>
-        <a href="contact.html" class="btn-gold-outline">طلب استشارة مجانية</a>
-        <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false"><span></span></button>
+        <button type="button" class="icon-btn" data-search-trigger aria-label="البحث">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <a href="contact.html" class="btn btn-primary btn-sm">طلب استشارة</a>
+        <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
 
-  <!-- MAIN PROJECT DETAIL -->
-  <main data-project-page style="padding-top: 140px;" class="section">
+  <main data-project-page style="padding-top:120px;">
     <div class="container">
-      
-      <div style="margin-bottom: 40px;" class="reveal">
-        <span class="eyebrow" data-p-eyebrow>تصميم معماري</span>
-        <h1 class="display-1" style="margin-top: 16px; color: var(--gold);" data-p-title>عنوان المشروع</h1>
-        <p class="lede" style="margin-top: 16px; max-width: 800px;" data-p-desc>تفاصيل واسعة للمشروع...</p>
+
+      <!-- Breadcrumb -->
+      <div class="reveal" style="margin-bottom:48px;">
+        <a href="javascript:history.back()" style="display:inline-flex;align-items:center;gap:8px;color:var(--ink-3);font-size:13px;font-weight:600;transition:color 0.2s;" onmouseover="this.style.color='var(--gold)'" onmouseout="this.style.color='var(--ink-3)'">
+          ← العودة للأعمال
+        </a>
       </div>
 
-      <div class="card reveal" style="padding: 24px; margin-bottom: 48px;">
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px;" data-p-meta>
-          <!-- Injected dynamically -->
+      <!-- Project Header -->
+      <div class="reveal" style="margin-bottom:40px;">
+        <span class="eyebrow" data-p-eyebrow>تصميم</span>
+        <h1 class="headline-xl" style="margin-top:16px;color:var(--white);" data-p-title>عنوان المشروع</h1>
+        <p class="body-lg" style="margin-top:16px;max-width:760px;" data-p-desc>تفاصيل المشروع...</p>
+      </div>
+
+      <!-- Meta Strip -->
+      <div class="card reveal" style="padding:28px 32px;margin-bottom:56px;">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:28px;" data-p-meta></div>
+      </div>
+
+      <!-- Cover Image -->
+      <div style="overflow:hidden;border:1px solid var(--line);border-radius:var(--radius-lg);margin-bottom:72px;" class="reveal" data-p-cover></div>
+
+      <!-- Idea + CTA -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:72px;" class="reveal">
+        <div class="card" style="padding:40px;">
+          <h3 class="headline-sm" style="color:var(--gold);margin-bottom:16px;">الفكرة والتحدي التصميمي</h3>
+          <div style="width:36px;height:1px;background:var(--gold-line);margin-bottom:20px;"></div>
+          <p class="body-md" data-p-idea>الفكرة التصميمية للمشروع...</p>
+        </div>
+        <div class="card card-gold" style="padding:40px;display:flex;flex-direction:column;justify-content:center;">
+          <h3 class="headline-sm" style="margin-bottom:14px;">هل ترغب بمشروع مماثل؟</h3>
+          <p class="body-md" style="margin-bottom:28px;">احصل على استشارة من رمضان قطب لمشروعك بنفس المستوى.</p>
+          <a href="contact.html" class="btn btn-primary">طلب استشارة لهذا المشروع ←</a>
         </div>
       </div>
 
-      <div style="overflow: hidden; border: 1px solid var(--line); margin-bottom: 64px;" class="reveal" data-p-cover>
-        <!-- Cover injected -->
-      </div>
-
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-bottom: 64px;" class="reveal">
-        <div class="card" style="padding: 36px;">
-          <h3 style="font-size: 22px; color: var(--gold); margin-bottom: 16px;">الفكرة والتحدي التصميمي</h3>
-          <p class="lede" data-p-idea>تم إعداد هذا المشروع للتغلب على تحديات المساحة والإضاءة وتوفير بيئة تجمع بين الرفاهية والوظيفة.</p>
+      <!-- Gallery -->
+      <div class="reveal" style="margin-bottom:80px;">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:32px;flex-wrap:wrap;gap:16px;">
+          <h2 class="headline-md">معرض الصور <span class="gold">بدقة عالية</span></h2>
+          <span class="badge" id="gallery-count"></span>
         </div>
-
-        <div class="card" style="padding: 36px; background: var(--bg-panel); border-color: var(--gold-line);">
-          <h3 style="font-size: 22px; color: var(--white); margin-bottom: 16px;">هل ترغب بمشروع مماثل؟</h3>
-          <p style="color: var(--ink-soft); font-size: 15px; margin-bottom: 24px;">احصل على استشارة هندسية ودراسة لمساحتك من قِبل المهندس رمضان قطب.</p>
-          <a href="contact.html" class="btn btn-solid">طلب استشارة لهذا المشروع ↗</a>
-        </div>
-      </div>
-
-      <div style="margin-top: 64px;" class="reveal">
-        <h2 class="display-2" style="margin-bottom: 32px; color: var(--white);">معرض الصور بدقة عالية</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px;" data-p-gallery>
-          <!-- Gallery thumbs -->
-        </div>
+        <div data-p-gallery></div>
       </div>
 
     </div>
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="brand">
-            <div class="brand-mark">RK</div>
-            <div class="brand-text">
-              <span style="color: var(--white);">Ramadan Kotb</span>
-              <small>DESIGN PORTFOLIO</small>
-            </div>
-          </div>
-          <p>استوديو التصميم الداخلي والمعماري.</p>
-        </div>
-        <div class="footer-col">
-          <h4>روابط القائمة</h4>
-          <div class="footer-links">
-            <a href="index.html">الرئيسية</a>
-            <a href="about.html">من نحن</a>
-            <a href="interior-design.html">خدماتنا</a>
-            <a href="room-designer.html">صمم مساحتك 2D</a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>المعرض</h4>
-          <div class="footer-links">
-            <a href="interior-design.html">تصميم داخلي</a>
-            <a href="exterior-design.html">تصميم خارجي</a>
-            <a href="graphic-design.html">تصميم جرافيك</a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>تواصل</h4>
-          <div class="footer-links">
-            <a href="tel:01112630681">01112630681</a>
-            <a href="https://wa.me/201112630681" target="_blank">واتساب</a>
-          </div>
-        </div>
+      <div class="footer-top">
+        <div><a href="index.html" class="brand"><div class="brand-mark">RK</div><div class="brand-text"><span>رمضان قطب</span><small>DESIGN STUDIO</small></div></a><p class="footer-brand-desc">مصمم داخلي وجرافيك ديزاين.</p></div>
+        <div class="footer-col"><h5>التنقل</h5><div class="footer-links"><a href="index.html">الرئيسية</a><a href="about.html">عن رمضان</a><a href="interior-design.html">التصميم الداخلي</a><a href="graphic-design.html">الجرافيك</a></div></div>
+        <div class="footer-col"><h5>المعرض</h5><div class="footer-links"><a href="interior-design.html">تصميم داخلي</a><a href="exterior-design.html">تصميم خارجي</a><a href="graphic-design.html">تصميم جرافيك</a></div></div>
+        <div class="footer-col"><h5>تواصل</h5><div class="footer-links"><a href="tel:01112630681">📞 01112630681</a><a href="https://wa.me/201112630681" target="_blank" rel="noopener">💬 واتساب</a></div></div>
       </div>
       <div class="footer-bottom">
-        <p>© <span data-year>2026</span> RK-DESIGN — المهندس رمضان قطب.</p>
-          </div>
-  </div>
-</footer>
+        <p>© <span data-year>2025</span> رمضان قطب — جميع الحقوق محفوظة.</p>
+        <p>Designed by <span>RK Design Studio</span></p>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/projects-data.js" defer></script>
   <script src="js/projects.js" defer></script>

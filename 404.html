@@ -3,84 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 — الصفحة غير موجودة | RK Design Studio</title>
-  <meta name="description" content="الصفحة التي تبحث عنها غير موجودة. عد للرئيسية واستكشف أعمال رمضان قطب في التصميم الداخلي والجرافيك.">
+  <title>الصفحة غير موجودة — RK Design Studio</title>
   <meta name="robots" content="noindex, follow">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta name="theme-color" content="#c5a059">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    .error-page {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 24px;
-      background: var(--bg);
-    }
-    .error-code {
-      font-family: var(--font-display);
-      font-size: clamp(80px, 20vw, 180px);
-      font-weight: 900;
-      color: var(--gold);
-      line-height: 1;
-      opacity: 0.15;
-      user-select: none;
-      margin-bottom: -20px;
-    }
-    .error-title {
-      font-size: clamp(24px, 5vw, 40px);
-      font-weight: 800;
-      color: var(--white);
-      margin-bottom: 16px;
-    }
-    .error-desc {
-      color: var(--ink-soft);
-      font-size: 16px;
-      max-width: 460px;
-      line-height: 1.8;
-      margin-bottom: 40px;
-    }
-    .error-actions { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
-  </style>
 </head>
 <body>
-  <div id="page-loader" aria-hidden="true"><div class="loader-mark">RK</div></div>
-  <header class="site-header" id="site-header">
+  <header class="site-header scrolled" id="site-header">
     <div class="container nav">
-      <a href="index.html" class="brand">
-        <div class="brand-mark">RK</div>
-        <div class="brand-text"><span>رمضان قطب</span><small>DESIGN STUDIO</small></div>
-      </a>
+      <a href="index.html" class="brand"><div class="brand-mark">RK</div><div class="brand-text"><span>رمضان قطب</span><small>DESIGN STUDIO</small></div></a>
       <nav class="nav-links" id="nav-links">
         <a href="index.html">الرئيسية</a>
-        <a href="about.html">عن رمضان</a>
-        <a href="interior-design.html">التصميم الداخلي والخارجي</a>
-        <a href="graphic-design.html">الجرافيك والبراندينج</a>
+        <a href="interior-design.html">التصميم الداخلي</a>
+        <a href="graphic-design.html">الجرافيك</a>
         <a href="contact.html">تواصل معي</a>
       </nav>
       <div class="nav-actions">
-        <a href="contact.html" class="btn-gold-outline">طلب استشارة مجانية</a>
-        <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false"><span></span></button>
+        <a href="contact.html" class="btn btn-primary btn-sm">طلب استشارة</a>
+        <button class="nav-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
       </div>
     </div>
   </header>
 
-  <main class="error-page">
-    <div class="error-code" aria-hidden="true">404</div>
-    <h1 class="error-title">الصفحة غير موجودة</h1>
-    <p class="error-desc">يبدو إن الصفحة اللي بتدور عليها اتنقلت أو اتمسحت. ارجع للرئيسية واستكشف أعمالنا.</p>
-    <div class="error-actions">
-      <a href="index.html" class="btn btn-solid">← الرئيسية</a>
-      <a href="contact.html" class="btn btn-outline">تواصل معنا</a>
+  <main style="min-height:80vh;display:flex;align-items:center;justify-content:center;padding-top:80px;">
+    <div style="text-align:center;padding:48px 24px;">
+      <div style="font-size:100px;line-height:1;margin-bottom:16px;color:var(--gold);font-weight:900;">404</div>
+      <h1 class="headline-lg" style="margin-bottom:16px;">الصفحة غير موجودة</h1>
+      <p class="body-lg" style="max-width:440px;margin:0 auto 40px;">الصفحة التي تبحث عنها غير موجودة أو تم نقلها. تأكد من الرابط أو ارجع للصفحة الرئيسية.</p>
+      <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap;">
+        <a href="index.html" class="btn btn-primary btn-lg">← الصفحة الرئيسية</a>
+        <a href="contact.html" class="btn btn-outline btn-lg">تواصل معي</a>
+      </div>
     </div>
   </main>
 
-  <script src="js/main.js" defer></script>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0;">
+        <p>© <span data-year>2025</span> رمضان قطب — جميع الحقوق محفوظة.</p>
+        <p>Designed by <span>RK Design Studio</span></p>
+      </div>
+    </div>
+  </footer>
+  <script>document.querySelector('[data-year]').textContent=new Date().getFullYear();</script>
 </body>
 </html>
