@@ -26,6 +26,68 @@
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ── Planner pro additions ─────────────────────── */
+    .planner-app { display:flex; gap:20px; align-items:flex-start; }
+
+    /* Sidebar */
+    .planner-sidebar { width:220px; flex-shrink:0; }
+
+    /* Snap controls */
+    .snap-controls { display:flex; flex-direction:column; gap:6px; }
+    .snap-row { display:flex; align-items:center; gap:8px; font-size:12px; color:var(--text-muted,#948A75); cursor:pointer; }
+    .snap-row input[type=checkbox] { width:14px; height:14px; accent-color:#C9A768; cursor:pointer; }
+
+    /* Properties panel */
+    #propsPanel {
+      display:none;
+      flex-direction:column;
+      gap:6px;
+      background:rgba(22,19,13,.85);
+      border:1px solid rgba(201,192,172,.15);
+      border-radius:10px;
+      padding:12px;
+      margin-bottom:10px;
+    }
+    .props-row { display:flex; gap:6px; align-items:center; }
+    .props-label { font-size:11px; color:#948A75; min-width:18px; }
+    .props-input {
+      flex:1; background:#1e1b14; border:1px solid rgba(201,192,172,.2);
+      color:#F3EEE2; font-size:12px; font-family:Cairo,sans-serif;
+      padding:4px 8px; border-radius:6px; width:100%;
+    }
+    .props-input:focus { outline:none; border-color:#C9A768; }
+    .props-actions { display:flex; gap:6px; margin-top:4px; }
+    .props-btn {
+      flex:1; font-size:11px; padding:5px 4px; border-radius:6px;
+      background:rgba(201,192,172,.1); border:1px solid rgba(201,192,172,.2);
+      color:#C9C0AC; cursor:pointer; font-family:Cairo,sans-serif;
+      transition:background .15s;
+    }
+    .props-btn:hover { background:rgba(201,192,172,.2); }
+    .props-btn.danger { color:#e88; border-color:rgba(220,80,80,.3); }
+    .props-btn.danger:hover { background:rgba(220,80,80,.15); }
+
+    /* Canvas area */
+    .planner-canvas-area { flex:1; min-width:0; }
+    .planner-canvas-wrap { position:relative; }
+    .planner-canvas-wrap canvas { display:block; width:100%; border-radius:10px; }
+
+    /* Keyboard hint */
+    .kb-hints { display:flex; flex-wrap:wrap; gap:6px; margin-top:8px; }
+    .kb-hint { font-size:10px; color:#5a5248; display:flex; align-items:center; gap:4px; }
+    .kb-key { background:#1e1b14; border:1px solid #333; border-radius:3px; padding:1px 5px; font-size:10px; color:#948A75; font-family:monospace; }
+
+    @media (max-width:768px) {
+      .planner-app { flex-direction:column; }
+      .planner-sidebar { width:100%; }
+      #propsPanel { flex-direction:row; flex-wrap:wrap; }
+      .props-row { flex:1; min-width:120px; }
+    }
+    @media (max-width:480px) {
+      .kb-hints { display:none; }
+    }
+  </style>
 </head>
 <body>
   <div id="page-loader" aria-hidden="true">
@@ -66,11 +128,49 @@
       <div class="container">
         <div class="planner-app">
 
+          <!-- ── Sidebar ─────────────────────────────────── -->
           <aside class="planner-sidebar">
+
+            <!-- Properties panel (appears on selection) -->
+            <div id="propsPanel" role="region" aria-label="خصائص العنصر">
+              <div style="font-size:11px;color:#C9A768;font-weight:700;margin-bottom:4px;">خصائص العنصر</div>
+              <div style="display:flex;gap:6px;">
+                <div class="props-row" style="flex:1">
+                  <span class="props-label">X</span>
+                  <input id="propX" class="props-input" type="number" aria-label="موضع X">
+                </div>
+                <div class="props-row" style="flex:1">
+                  <span class="props-label">Y</span>
+                  <input id="propY" class="props-input" type="number" aria-label="موضع Y">
+                </div>
+              </div>
+              <div style="display:flex;gap:6px;">
+                <div class="props-row" style="flex:1">
+                  <span class="props-label">ع</span>
+                  <input id="propW" class="props-input" type="number" min="20" aria-label="العرض">
+                </div>
+                <div class="props-row" style="flex:1">
+                  <span class="props-label">ط</span>
+                  <input id="propH" class="props-input" type="number" min="20" aria-label="الطول">
+                </div>
+              </div>
+              <div class="props-row">
+                <span class="props-label">°</span>
+                <input id="propRot" class="props-input" type="number" min="0" max="360" aria-label="الدوران">
+              </div>
+              <div class="props-actions">
+                <button id="propMirrorH" class="props-btn" title="عكس أفقي">⇔ أفقي</button>
+                <button id="propMirrorV" class="props-btn" title="عكس عمودي">⇕ رأسي</button>
+                <button id="propDup"     class="props-btn" title="نسخ (Ctrl+D)">⧉ نسخ</button>
+                <button id="propDelete"  class="props-btn danger" title="حذف (Delete)">✕</button>
+              </div>
+            </div>
+
+            <!-- Room type -->
             <div class="planner-block">
               <h4>1. نوع الغرفة</h4>
               <div class="room-type-chips" id="roomTypeChips">
-                <button type="button" data-room="living" class="is-active">معيشة</button>
+                <button type="button" data-room="living"  class="is-active">معيشة</button>
                 <button type="button" data-room="bedroom">نوم</button>
                 <button type="button" data-room="kitchen">مطبخ</button>
                 <button type="button" data-room="bathroom">حمام</button>
@@ -78,31 +178,57 @@
               </div>
             </div>
 
+            <!-- Draw tools -->
             <div class="planner-block">
               <h4>2. أدوات الرسم</h4>
               <div class="tool-buttons" id="toolButtons">
-                <button type="button" data-tool="wall" class="is-active">▭ حائط</button>
+                <button type="button" data-tool="wall"   class="is-active">▭ حائط</button>
                 <button type="button" data-tool="door">🚪 باب</button>
                 <button type="button" data-tool="window">▦ شباك</button>
                 <button type="button" data-tool="erase">✕ حذف</button>
               </div>
             </div>
 
+            <!-- Furniture -->
             <div class="planner-block">
               <h4>3. أثاث — <span id="furnitureRoomLabel">معيشة</span></h4>
               <div class="furniture-grid" id="furnitureGrid"></div>
             </div>
 
-            <button type="button" id="clearAll" class="btn btn-ghost" style="width:100%;">مسح اللوحة</button>
+            <!-- Snap controls -->
+            <div class="planner-block">
+              <h4>4. المحاذاة التلقائية</h4>
+              <div class="snap-controls">
+                <label class="snap-row"><input type="checkbox" id="snapEnabled" checked> تفعيل الجذب</label>
+                <label class="snap-row"><input type="checkbox" id="snapGrid"    checked> جذب للشبكة</label>
+                <label class="snap-row"><input type="checkbox" id="snapWalls"   checked> جذب للحوائط</label>
+                <label class="snap-row"><input type="checkbox" id="snapCorners" checked> جذب للزوايا</label>
+                <label class="snap-row"><input type="checkbox" id="snapCenters" checked> جذب للمراكز</label>
+              </div>
+            </div>
+
+            <button type="button" id="clearAll" class="btn btn-ghost" style="width:100%;margin-top:8px;">مسح اللوحة</button>
           </aside>
 
-          <div>
+          <!-- ── Canvas area ──────────────────────────────── -->
+          <div class="planner-canvas-area">
             <div class="planner-canvas-wrap">
-              <canvas id="plannerCanvas" width="900" height="620"></canvas>
+              <canvas id="plannerCanvas" width="900" height="620" tabindex="0" aria-label="لوحة تخطيط الغرفة"></canvas>
             </div>
             <div class="planner-actions">
               <button type="button" id="downloadDesign" class="btn btn-outline">📷 تحميل التصميم</button>
               <a id="sendWhatsapp" href="#" target="_blank" rel="noopener" class="btn btn-primary">ارسل التصميم واستشر رمضان 💬</a>
+            </div>
+            <!-- Keyboard shortcuts hint -->
+            <div class="kb-hints" aria-label="اختصارات لوحة المفاتيح">
+              <span class="kb-hint"><kbd class="kb-key">Ctrl Z</kbd> تراجع</span>
+              <span class="kb-hint"><kbd class="kb-key">Ctrl ⇧ Z</kbd> إعادة</span>
+              <span class="kb-hint"><kbd class="kb-key">Ctrl C/V</kbd> نسخ/لصق</span>
+              <span class="kb-hint"><kbd class="kb-key">Ctrl D</kbd> تكرار</span>
+              <span class="kb-hint"><kbd class="kb-key">Del</kbd> حذف</span>
+              <span class="kb-hint"><kbd class="kb-key">↑↓←→</kbd> تحريك</span>
+              <span class="kb-hint"><kbd class="kb-key">⇧ + ↑↓←→</kbd> تحريك ×10</span>
+              <span class="kb-hint"><kbd class="kb-key">⇧ + سحب دوران</kbd> زوايا حرة</span>
             </div>
           </div>
 

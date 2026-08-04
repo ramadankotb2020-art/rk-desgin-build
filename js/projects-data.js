@@ -680,8 +680,9 @@ const PROJECTS_FALLBACK = [
     "cover": "images/projects-by-name/interior/حمام عصري/01-cover.png",
     "before": null,
     "gallery": [
-      "images/projects-by-name/interior/حمام عصري/06-photo.png",
-      "images/projects-by-name/interior/حمام عصري/20-photo.png"
+      "images/projects-by-name/interior/حمام عصري/1.mp4",
+      "images/projects-by-name/interior/حمام عصري/2.png",
+      "images/projects-by-name/interior/حمام عصري/3.png"
     ],
     "excerpt": "تصميم حمام بخامات عصرية سهلة التنظيف، مع إضاءة هادئة تمنح المساحة إحساسًا فندقيًا مريحًا.",
     "description": "تصميم حمام بخامات عصرية سهلة التنظيف، مع إضاءة هادئة تمنح المساحة إحساسًا فندقيًا مريحًا.",
@@ -723,9 +724,10 @@ const PROJECTS_FALLBACK = [
     "location": "",
     "area": null,
     "year": "2026",
-    "cover": "images/projects-by-name/interior/حمام ماستر الدقى/01-cover.png",
+    "cover": "images/projects-by-name/interior/حمام ماستر الدقى/1.png",
     "before": null,
     "gallery": [
+      "images/projects-by-name/interior/حمام ماستر الدقى/01-cover.mp4",
       "images/projects-by-name/interior/حمام ماستر الدقى/حمام ماستر عين الدقى (1).png",
       "images/projects-by-name/interior/حمام ماستر الدقى/حمام ماستر عين الدقى (2).png",
       "images/projects-by-name/interior/حمام ماستر الدقى/حمام ماستر عين الدقى (4).png"

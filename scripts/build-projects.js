@@ -40,6 +40,7 @@ const DISCIPLINE_FOLDERS = {
 };
 
 const IMAGE_EXT = [".jpg", ".jpeg", ".png", ".webp", ".gif"];
+const VIDEO_EXT = [".mp4", ".webm"];
 
 function slugify(str) {
   return (
@@ -90,6 +91,8 @@ function parseInfoTxt(filePath) {
 
 function buildProjectFromFolder(disciplineKey, folderName, folderPath) {
   const entries = fs.readdirSync(folderPath, { withFileTypes: true });
+
+  /* ─── Collect images sorted ─── */
   const images = entries
     .filter((e) => e.isFile() && IMAGE_EXT.includes(path.extname(e.name).toLowerCase()))
     .map((e) => e.name)
@@ -97,10 +100,28 @@ function buildProjectFromFolder(disciplineKey, folderName, folderPath) {
 
   if (!images.length) return null; // فولدر من غير صور = مش مشروع جاهز، اتجاهله
 
+  /* ─── Collect videos sorted ─── */
+  const videos = entries
+    .filter((e) => e.isFile() && VIDEO_EXT.includes(path.extname(e.name).toLowerCase()))
+    .map((e) => e.name)
+    .sort();
+
   const cover = `images/projects-by-name/${disciplineKey}/${folderName}/${images[0]}`;
-  const gallery = images
-    .slice(1)
-    .map((img) => `images/projects-by-name/${disciplineKey}/${folderName}/${img}`);
+
+  /* ─── Merge images (from index 1) + videos in sorted order ─── */
+  /* cover.mp4 goes at start of gallery, numbered videos go in their natural position */
+  const allGalleryFiles = [
+    ...images.slice(1),
+    ...videos.filter(v => v !== 'cover.mp4')  /* numbered videos like 1.mp4, 2.mp4 */
+  ].sort();
+
+  /* cover.mp4 gets prepended separately if exists */
+  const hasCoverVideo = videos.includes('cover.mp4');
+
+  const gallery = [
+    ...(hasCoverVideo ? [`images/projects-by-name/${disciplineKey}/${folderName}/cover.mp4`] : []),
+    ...allGalleryFiles.map((f) => `images/projects-by-name/${disciplineKey}/${folderName}/${f}`)
+  ];
 
   const info = parseInfoTxt(path.join(folderPath, "info.txt"));
   const discipline = DISCIPLINE_FOLDERS[disciplineKey] || disciplineKey;

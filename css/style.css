@@ -803,6 +803,47 @@ button:focus:not(:focus-visible) { outline: none; }
   pointer-events: none;
 }
 
+/* ─── Category Hero Slideshow ─── */
+.page-hero {
+  /* Ensure stacking context for slideshow children */
+  isolation: isolate;
+}
+.page-hero-slideshow {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+/* .ph-slide and .ph-slide-img are built in JS */
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.75) 0%,
+    rgba(0,0,0,0.35) 50%,
+    rgba(0,0,0,0.15) 100%
+  );
+  pointer-events: none;
+}
+
+/* Lift the text content above the slideshow */
+.page-hero > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* When slideshow is active, make text white */
+[data-category-hero] .eyebrow,
+[data-category-hero] .body-lg {
+  color: rgba(255,255,255,0.82);
+}
+[data-category-hero] .headline-xl {
+  color: var(--white);
+}
+
 /* ─── Stats Strip ─── */
 .stats-row {
   display: grid;

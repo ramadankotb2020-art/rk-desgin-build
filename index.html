@@ -93,24 +93,22 @@
     <div class="hero-bg"></div>
     <div class="hero-grid" aria-hidden="true"></div>
 
-    <!-- Slides -->
-    <div class="hero-slides-wrap" aria-live="polite" aria-atomic="true">
-
-      <div class="hero-slide active" aria-label="التصميم الداخلي والديكور">
-        <div class="hero-slide-img" style="background-image:url('images/homepage/hero-slide-1-interior.jpg');" role="img" aria-label="تصميم داخلي فاخر"></div>
-        <div class="hero-slide-overlay"></div>
-      </div>
-
-      <div class="hero-slide" aria-label="الجرافيك والهوية البصرية">
-        <div class="hero-slide-img" style="background-image:url('images/homepage/hero-slide-2-graphic.jpg');" role="img" aria-label="هوية بصرية احترافية"></div>
-        <div class="hero-slide-overlay"></div>
-      </div>
-
-      <div class="hero-slide" aria-label="التصميم الخارجي واللاندسكيب">
-        <div class="hero-slide-img" style="background-image:url('images/homepage/hero-slide-3-exterior.jpg');" role="img" aria-label="تصميم خارجي ولاندسكيب"></div>
-        <div class="hero-slide-overlay"></div>
-      </div>
-
+    <!-- Cinematic Video Background -->
+    <div class="hero-video-wrap" aria-hidden="true">
+      <video
+        id="hero-video"
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        disablepictureinpicture
+        preload="none"
+        poster="images/homepage/hero-slide-1-interior.jpg">
+        <source src="videos/hero-bg.webm" type="video/webm">
+        <source src="videos/hero-bg.mp4"  type="video/mp4">
+      </video>
+      <div class="hero-video-overlay"></div>
     </div>
 
     <!-- Content -->

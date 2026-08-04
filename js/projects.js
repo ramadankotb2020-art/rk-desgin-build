@@ -36,17 +36,27 @@ function renderProjects(filter, containerAttr) {
     return;
   }
 
-  container.innerHTML = filtered.map((p, i) => `
+  container.innerHTML = filtered.map((p, i) => {
+    /* ─── Cover: video if cover.mp4 exists beside cover image ─── */
+    const dir        = p.cover ? p.cover.substring(0, p.cover.lastIndexOf('/') + 1) : '';
+    const coverVideo = dir + 'cover.mp4';
+
+    const mediaHTML = p.cover ? `
+      <video
+        src="${coverVideo}"
+        class="project-img"
+        autoplay muted loop playsinline
+        poster="${p.cover}"
+        style="width:100%;height:100%;object-fit:cover;display:block;"
+        onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<img src=\"${p.cover}\" class=\"project-img\" alt=\"${p.title}\" loading=\"lazy\" decoding=\"async\">')">
+      </video>` : '';
+
+    return `
     <a href="project.html?id=${encodeURIComponent(p.id)}"
        class="project-card reveal"
        style="animation-delay:${(i % 6) * 60}ms">
       <div class="project-card-media">
-        <img src="${p.cover}"
-             class="project-img"
-             alt="${p.title}"
-             loading="${i < 4 ? 'eager' : 'lazy'}"
-             decoding="async"
-             onerror="this.closest('.project-card-media').innerHTML='<div style=\\'display:flex;align-items:center;justify-content:center;height:100%;color:var(--ink-3);font-size:13px;\\'>لا توجد صورة</div>'">
+        ${mediaHTML}
         ${p.category ? `<span class="project-category-badge">${p.category}</span>` : ''}
         <span class="project-card-cta">عرض المشروع ←</span>
       </div>
@@ -54,8 +64,8 @@ function renderProjects(filter, containerAttr) {
         ${p.category ? `<p>${p.category}</p>` : ''}
         <h3>${p.title}</h3>
       </div>
-    </a>
-  `).join('');
+    </a>`;
+  }).join('');
 
   /* Trigger reveal for newly injected cards */
   requestAnimationFrame(() => {
@@ -187,38 +197,86 @@ buildFilterBar(null);
   /* Gallery */
   const galleryEl = page.querySelector('[data-p-gallery]');
   if (galleryEl) {
-    const images = project.gallery?.length ? project.gallery : (project.cover ? [project.cover] : []);
+    const rawItems = project.gallery?.length ? project.gallery : (project.cover ? [project.cover] : []);
+
+    /* ─── Detect videos by extension ─── */
+    function isVideo(src) {
+      return /\.(mp4|webm|ogg)(\?.*)?$/i.test(src);
+    }
+
+    /* ─── Build cover video path from cover image path ─── */
+    /* e.g. images/.../01-cover.jpg  →  images/.../cover.mp4  */
+    function getCoverVideo(coverSrc) {
+      if (!coverSrc) return null;
+      const dir = coverSrc.substring(0, coverSrc.lastIndexOf('/') + 1);
+      return dir + 'cover.mp4';
+    }
+
+    /* ─── Merge: images + any video files in gallery ─── */
+    /* Also check if cover.mp4 exists by trying to load it */
+    const allItems = [...rawItems];
+
+    /* Add cover.mp4 at the start if not already in list */
+    const coverVideoPath = getCoverVideo(project.cover);
+    if (coverVideoPath && !allItems.some(s => isVideo(s))) {
+      allItems.unshift(coverVideoPath);
+    }
+
+    /* Separate into images and videos, keep original order */
+    /* Videos go at their natural position (cover.mp4 first, numbered videos in place) */
+    const items = allItems; /* keep order as-is */
+
+    /* Only images go into lightbox */
+    const imageItems = items.filter(s => !isVideo(s));
 
     galleryEl.style.cssText = 'columns:2;column-gap:16px;';
 
-    galleryEl.innerHTML = images.map((src, i) => `
-      <div style="break-inside:avoid;margin-bottom:16px;overflow:hidden;
-        border:1px solid var(--line);border-radius:8px;background:var(--bg-3);
-        transition:border-color 0.3s;cursor:zoom-in;"
-        onmouseenter="this.style.borderColor='var(--gold)'"
-        onmouseleave="this.style.borderColor='var(--line)'"
-        onclick="window.__openLightbox && window.__openLightbox(${i})">
-        <img src="${src}" alt="${project.title} — ${i + 1}"
-          loading="${i < 4 ? 'eager' : 'lazy'}"
-          style="width:100%;height:auto;display:block;
-            transition:transform 0.5s,filter 0.35s;filter:brightness(0.88);"
-          onload="this.style.filter='brightness(1)'"
-          onerror="this.closest('div').style.display='none'"
-          onmouseenter="this.style.transform='scale(1.03)'"
-          onmouseleave="this.style.transform='scale(1)'">
-      </div>
-    `).join('');
+    let imageIdx = 0; /* track index within images only for lightbox */
+
+    galleryEl.innerHTML = items.map((src, i) => {
+      if (isVideo(src)) {
+        return `
+          <div style="break-inside:avoid;margin-bottom:16px;overflow:hidden;
+            border:1px solid var(--line);border-radius:8px;background:var(--bg-3);">
+            <video
+              src="${src}"
+              style="width:100%;height:auto;display:block;"
+              autoplay muted loop playsinline
+              onerror="this.closest('div').style.display='none'">
+            </video>
+          </div>`;
+      } else {
+        const lbIndex = imageItems.indexOf(src);
+        return `
+          <div style="break-inside:avoid;margin-bottom:16px;overflow:hidden;
+            border:1px solid var(--line);border-radius:8px;background:var(--bg-3);
+            transition:border-color 0.3s;cursor:zoom-in;"
+            onmouseenter="this.style.borderColor='var(--gold)'"
+            onmouseleave="this.style.borderColor='var(--line)'"
+            onclick="window.__openLightbox && window.__openLightbox(${lbIndex})">
+            <img src="${src}" alt="${project.title} — ${i + 1}"
+              loading="${i < 4 ? 'eager' : 'lazy'}"
+              style="width:100%;height:auto;display:block;
+                transition:transform 0.5s,filter 0.35s;filter:brightness(0.88);"
+              onload="this.style.filter='brightness(1)'"
+              onerror="this.closest('div').style.display='none'"
+              onmouseenter="this.style.transform='scale(1.03)'"
+              onmouseleave="this.style.transform='scale(1)'">
+          </div>`;
+      }
+    }).join('');
 
     /* Responsive columns */
     const updateCols = () => { galleryEl.style.columns = window.innerWidth < 640 ? '1' : '2'; };
     updateCols();
     window.addEventListener('resize', updateCols, { passive: true });
 
-    /* Gallery count badge */
+    /* Gallery count badge — images only */
     const countBadge = document.getElementById('gallery-count');
-    if (countBadge) countBadge.textContent = `${images.length} صورة`;
+    if (countBadge) countBadge.textContent = `${imageItems.length} صورة`;
 
-    /* ─── Lightbox ─── */
+    /* ─── Lightbox — images only ─── */
+    const images = imageItems;
     window.__galleryImages = images;
     let lbIdx = 0;
 
