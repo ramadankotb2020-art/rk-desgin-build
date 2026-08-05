@@ -1037,3 +1037,54 @@ img { -webkit-backface-visibility: hidden; backface-visibility: hidden; }
   .section-sm { padding: 56px 0; }
   .page-hero { padding: 140px 0 72px; }
 }
+
+
+/* ══════════════════════════════════════════
+   MOBILE FIXES
+══════════════════════════════════════════ */
+
+/* ─── About Bio Grid ─── */
+.about-bio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .about-bio-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  /* Show image first on mobile */
+  .about-bio-grid > div:last-child {
+    order: -1;
+  }
+  /* Fix image aspect ratio on mobile */
+  .about-bio-grid > div:last-child > div:first-child {
+    aspect-ratio: 4/3;
+  }
+}
+
+/* ─── About Expertise Grid ─── */
+.about-expertise-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+@media (max-width: 640px) {
+  .about-expertise-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ─── Hero Slides Mobile Fix ─── */
+@media (max-width: 768px) {
+  /* Ensure slides show properly on mobile */
+  .hero-slide-img {
+    background-attachment: scroll !important;
+  }
+  /* Fix hero height on mobile */
+  .hero {
+    min-height: 100svh;
+  }
+}

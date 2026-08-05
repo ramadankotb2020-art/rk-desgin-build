@@ -93,22 +93,12 @@
     <div class="hero-bg"></div>
     <div class="hero-grid" aria-hidden="true"></div>
 
-    <!-- Cinematic Video Background -->
-    <div class="hero-video-wrap" aria-hidden="true">
-      <video
-        id="hero-video"
-        class="hero-video"
-        autoplay
-        muted
-        loop
-        playsinline
-        disablepictureinpicture
-        preload="none"
-        poster="images/homepage/hero-slide-1-interior.jpg">
-        <source src="videos/hero-bg.webm" type="video/webm">
-        <source src="videos/hero-bg.mp4"  type="video/mp4">
-      </video>
-      <div class="hero-video-overlay"></div>
+    <!-- Hero Media: Slides + Video -->
+    <div class="hero-media-wrap" aria-hidden="true">
+
+      <!-- All slides (images + videos) built dynamically by home.js -->
+
+      <div class="hero-media-overlay"></div>
     </div>
 
     <!-- Content -->
@@ -125,11 +115,7 @@
     </div>
 
     <!-- Dots -->
-    <div class="hero-dots-bar" role="tablist" aria-label="التنقل بين الشرائح">
-      <button class="hero-dot active" role="tab" aria-selected="true" aria-label="الشريحة 1" data-slide="0"></button>
-      <button class="hero-dot" role="tab" aria-selected="false" aria-label="الشريحة 2" data-slide="1"></button>
-      <button class="hero-dot" role="tab" aria-selected="false" aria-label="الشريحة 3" data-slide="2"></button>
-    </div>
+    <div class="hero-dots-bar" role="tablist" aria-label="التنقل بين الشرائح"></div>
 
     <!-- Arrows -->
     <button class="hero-arrow prev" aria-label="الشريحة التالية">›</button>
@@ -474,6 +460,7 @@
   <script src="js/projects.js" defer></script>
   <script src="js/video-covers.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script src="js/slides.js" defer></script>
   <script src="js/home.js" defer></script>
 </body>
 </html>

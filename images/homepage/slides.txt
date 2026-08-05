@@ -1,0 +1,26 @@
+---
+image: hero-slide-1-interior.jpg
+tag: التصميم الداخلي والديكور
+title: أحوّل مساحتك إلى <em>تحفة معمارية</em>
+sub: تصميم داخلي سكني وتجاري — رندر 3D ومخططات تنفيذية بأعلى دقة
+btn_text: تصفح أعمال الديكور
+btn_href: interior-design.html
+dur: 6
+
+---
+image: hero-slide-2-graphic.jpg
+tag: الجرافيك والهوية البصرية
+title: هوية تجارية <em>لا تُنسى</em>
+sub: شعارات، هويات بصرية، مطبوعات، تغليف — كل عمل قصة بصرية تعيش مع علامتك
+btn_text: تصفح أعمال الجرافيك
+btn_href: graphic-design.html
+dur: 6
+
+---
+image: hero-slide-3-exterior.jpg
+tag: التصميم الخارجي واللاندسكيب
+title: واجهات <em>مبهرة</em> وحدائق راقية
+sub: تصميم واجهات معمارية وتنسيق حدائق — رندر خارجي احترافي
+btn_text: تصفح التصميم الخارجي
+btn_href: exterior-design.html
+dur: 6
