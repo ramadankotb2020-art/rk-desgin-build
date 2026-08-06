@@ -12,11 +12,11 @@
   --gold-line:   rgba(197, 160, 89, 0.2);
   --gold-line2:  rgba(197, 160, 89, 0.08);
 
-  --bg:          #0a0a0a;
-  --bg-2:        #0f0f0f;
-  --bg-3:        #141414;
-  --bg-4:        #1a1a1a;
-  --bg-glass:    rgba(10, 10, 10, 0.7);
+  --bg:          rgba(10, 10, 10, 0.82);
+  --bg-2:        rgba(15, 15, 15, 0.85);
+  --bg-3:        rgba(20, 20, 20, 0.88);
+  --bg-4:        rgba(26, 26, 26, 0.90);
+  --bg-glass:    rgba(10, 10, 10, 0.65);
 
   --white:       #ffffff;
   --ink:         #e8e8e8;
@@ -49,13 +49,39 @@
 html { scroll-behavior: smooth; font-size: 16px; }
 body {
   font-family: var(--font-body);
-  background: var(--bg);
+  background-color: #0a0a0a;
   color: var(--ink);
   direction: rtl;
   line-height: 1.7;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
+
+/* ─── Fixed Parallax Background ─── */
+#page-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+#page-bg.loaded { opacity: 1; }
+#page-bg-2 {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+#page-bg-2.loaded { opacity: 1; }
 img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; transition: color 0.2s; }
 button { cursor: pointer; font-family: inherit; }
@@ -1087,4 +1113,62 @@ img { -webkit-backface-visibility: hidden; backface-visibility: hidden; }
   .hero {
     min-height: 100svh;
   }
+}
+
+
+/* ══════════════════════════════════════════
+   PARALLAX BANNERS
+══════════════════════════════════════════ */
+.parallax-banner {
+  position: relative;
+  height: 560px;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  .parallax-banner { height: 320px; }
+}
+
+.parallax-img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  transition: opacity 1.5s ease-in-out;
+}
+@media (max-width: 768px) {
+  .parallax-img {
+    background-attachment: scroll;
+  }
+}
+
+.parallax-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0,0,0,0.70) 0%,
+    rgba(0,0,0,0.35) 50%,
+    rgba(0,0,0,0.15) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 80px;
+}
+@media (max-width: 768px) {
+  .parallax-overlay {
+    justify-content: center;
+    padding: 0 24px;
+    text-align: center;
+    background: rgba(0,0,0,0.50);
+  }
+}
+
+.parallax-text {
+  max-width: 560px;
+}
+.parallax-text .headline-md {
+  line-height: 1.3;
 }

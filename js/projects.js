@@ -363,3 +363,67 @@ buildFilterBar(null);
   }
 
 })();
+
+/* ══════════════════════════════════════════
+   PARALLAX BANNERS — صور من المشاريع
+   بتتغير كل ساعة أوتوماتيك
+══════════════════════════════════════════ */
+(function () {
+
+  const HOUR = 60 * 60 * 1000;
+
+  function getCovers(discipline) {
+    const all = window.projectsData || [];
+    return (discipline ? all.filter(p => p.discipline === discipline) : all)
+      .map(p => p.cover).filter(Boolean);
+  }
+
+  function pickByHour(arr, offset) {
+    if (!arr.length) return null;
+    const hour = Math.floor(Date.now() / HOUR);
+    return arr[(hour + offset) % arr.length];
+  }
+
+  function setImage(el, src) {
+    if (!el || !src) return;
+    el.style.backgroundImage = `url('${src}')`;
+  }
+
+  function fadeToImage(el, src) {
+    if (!el || !src) return;
+    el.style.transition = 'opacity 1.2s ease-in-out';
+    el.style.opacity = '0';
+    setTimeout(() => {
+      el.style.backgroundImage = `url('${src}')`;
+      el.style.opacity = '1';
+    }, 1200);
+  }
+
+  function applyAll(fade) {
+    const fn = fade ? fadeToImage : setImage;
+    fn(document.getElementById('parallax-img-1'), pickByHour(getCovers('interior'), 0));
+    fn(document.getElementById('parallax-img-2'), pickByHour(getCovers('graphic'),  5));
+    fn(document.getElementById('parallax-img-3'), pickByHour(getCovers('exterior'), 10));
+  }
+
+  /* Lazy load via IntersectionObserver */
+  let applied = false;
+  const banners = document.querySelectorAll('.parallax-banner');
+  if (!banners.length) return;
+
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !applied) {
+        applied = true;
+        applyAll(false);
+        obs.disconnect();
+      }
+    });
+  }, { threshold: 0.05 });
+
+  banners.forEach(el => obs.observe(el));
+
+  /* Update every hour */
+  setInterval(() => applyAll(true), HOUR);
+
+})();

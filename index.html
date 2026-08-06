@@ -45,6 +45,9 @@
   <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
+  <!-- Fixed parallax backgrounds -->
+  <div id="page-bg"></div>
+  <div id="page-bg-2"></div>
   <a href="#main-content" style="position:absolute;top:-40px;right:0;background:var(--gold);color:var(--bg);padding:8px 16px;font-weight:700;z-index:10000;transition:top 0.2s;border-radius:0 0 4px 4px;" onfocus="this.style.top='0'" onblur="this.style.top='-40px'">انتقل للمحتوى الرئيسي</a>
 
   <div id="page-loader" aria-hidden="true">
@@ -259,6 +262,18 @@
     </div>
   </section>
 
+
+  <!-- ═══════════════ PARALLAX 1 — انتريور ═══════════════ -->
+  <div class="parallax-banner" id="parallax-interior" aria-hidden="true">
+    <div class="parallax-img" id="parallax-img-interior"></div>
+    <div class="parallax-overlay">
+      <div class="parallax-text reveal">
+        <span class="eyebrow" style="color:rgba(255,255,255,0.7);">التصميم الداخلي والديكور</span>
+        <p class="headline-md" style="color:#fff;margin-top:12px;">كل مساحة <em class="gold">قصة</em> تستحق أن تُروى</p>
+      </div>
+    </div>
+  </div>
+
   <!-- ═══════════════ FEATURED WORKS ═══════════════ -->
   <section class="section">
     <div class="container">
@@ -275,6 +290,7 @@
       <div class="portfolio-grid" data-featured></div>
     </div>
   </section>
+
 
   <!-- ═══════════════ STATS ═══════════════ -->
   <section class="section-sm" style="background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
@@ -390,6 +406,18 @@
     </div>
   </section>
 
+
+  <!-- ═══════════════ PARALLAX 2 — جرافيك ═══════════════ -->
+  <div class="parallax-banner" id="parallax-graphic" aria-hidden="true">
+    <div class="parallax-img" id="parallax-img-graphic"></div>
+    <div class="parallax-overlay">
+      <div class="parallax-text reveal">
+        <span class="eyebrow" style="color:rgba(255,255,255,0.7);">الجرافيك والهوية البصرية</span>
+        <p class="headline-md" style="color:#fff;margin-top:12px;">علامتك التجارية <em class="gold">أقوى</em> من مجرد لوجو</p>
+      </div>
+    </div>
+  </div>
+
   <!-- ═══════════════ CTA BANNER ═══════════════ -->
   <section class="section-sm" style="background:var(--bg-2);border-top:1px solid var(--line);">
     <div class="container">
@@ -457,6 +485,8 @@
   </footer>
 
   <script src="js/projects-data.js" defer></script>
+  <script src="js/parallax.js" defer></script>
+  <script src="js/page-bg.js" defer></script>
   <script src="js/projects.js" defer></script>
   <script src="js/video-covers.js" defer></script>
   <script src="js/main.js" defer></script>
