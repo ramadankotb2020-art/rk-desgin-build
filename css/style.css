@@ -1137,9 +1137,18 @@ img { -webkit-backface-visibility: hidden; backface-visibility: hidden; }
   background-repeat: no-repeat;
   transition: opacity 1.5s ease-in-out;
 }
+
+/* Mobile: JS handles parallax via transform — disable fixed */
 @media (max-width: 768px) {
+  .parallax-banner {
+    overflow: hidden; /* needed for JS parallax */
+  }
   .parallax-img {
     background-attachment: scroll;
+    /* Larger than banner so JS can move it */
+    inset: -30% 0;
+    background-size: cover;
+    will-change: transform;
   }
 }
 
@@ -1171,4 +1180,101 @@ img { -webkit-backface-visibility: hidden; backface-visibility: hidden; }
 }
 .parallax-text .headline-md {
   line-height: 1.3;
+}
+
+
+/* ══════════════════════════════════════════
+   GLOBAL MOBILE FIXES
+══════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* Fix about bio grid */
+  .about-bio-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+  .about-bio-grid > div:last-child {
+    order: -1;
+  }
+
+  /* Fix expertise grid */
+  .about-expertise-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Fix stats row on mobile */
+  .stats-row {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Fix section padding */
+  .section { padding: 56px 0; }
+  .section-sm { padding: 36px 0; }
+
+  /* Fix cards padding */
+  .card { padding: 28px 20px !important; }
+  .pillar { padding: 32px 24px !important; }
+
+  /* Fix container padding */
+  .container { padding: 0 16px; }
+
+  /* Fix footer grid */
+  .footer-top {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  /* Fix page hero */
+  .page-hero { padding: 120px 0 56px; }
+  .page-hero > .container { position: relative; z-index: 2; }
+
+  /* Fix headline sizes */
+  .headline-xl { font-size: clamp(32px, 8vw, 48px) !important; }
+  .headline-lg { font-size: clamp(26px, 7vw, 36px) !important; }
+  .headline-md { font-size: clamp(22px, 6vw, 30px) !important; }
+
+  /* Fix buttons on mobile */
+  .btn-lg { padding: 14px 24px; font-size: 15px; }
+
+  /* Fix CTA banner */
+  .cta-banner {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 36px 20px !important;
+  }
+
+  /* Fix planner callout */
+  .planner-callout {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 32px 20px !important;
+  }
+
+  /* Fix services grid */
+  .services-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Fix steps grid */
+  .steps {
+    grid-template-columns: 1fr !important;
+  }
+  .steps::before { display: none !important; }
+
+  /* Fix features grid */
+  .features {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Fix project cards */
+  .portfolio-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+  .hero-title { font-size: 32px !important; }
+  .container { padding: 0 12px; }
 }

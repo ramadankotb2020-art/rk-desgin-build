@@ -2,7 +2,7 @@
   'use strict';
 
   /* ══════════════════════════════════════════════════════════════
-     HOME HERO ENGINE — متعدّلش هنا
+     HOME HERO ENGINE — Mobile First
      الكلام والصور والفيديوهات كلها في js/slides.js
   ══════════════════════════════════════════════════════════════ */
 
@@ -11,7 +11,7 @@
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const saveData      = navigator.connection?.saveData === true;
-  const skipVideo     = reducedMotion || saveData;
+  const isMobile      = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   const mediaWrap = heroEl.querySelector('.hero-media-wrap');
   const dotsBar   = heroEl.querySelector('.hero-dots-bar');
@@ -21,15 +21,18 @@
   const subEl     = heroEl.querySelector('#hero-sub');
   const btnEl     = heroEl.querySelector('#hero-btn-primary');
 
-  /* ─── Load slides from slides.js ─── */
-  const RAW = window.HERO_SLIDES || [];
-  const SLIDES = RAW.filter(s => s.type === 'image' || !skipVideo);
+  const RAW    = window.HERO_SLIDES || [];
+  const SLIDES = RAW.filter(s => {
+    if (s.type === 'image') return true;
+    if (reducedMotion || saveData) return false;
+    return true; /* فيديو يشتغل على الموبايل برضو */
+  });
   if (!SLIDES.length) return;
 
   let current = 0;
   let timer   = null;
 
-  /* ─── Build image slide element ─── */
+  /* ─── Build image slide ─── */
   function buildImageEl(s) {
     const wrap = document.createElement('div');
     wrap.className = 'hero-slide';
@@ -40,17 +43,29 @@
     return wrap;
   }
 
-  /* ─── Build video slide element ─── */
+  /* ─── Build video slide — mobile compatible ─── */
   function buildVideoEl(s) {
     const wrap = document.createElement('div');
-    wrap.className = 'hero-slide';
+    wrap.className = 'hero-slide hero-slide-video';
+
     const vid = document.createElement('video');
-    vid.className   = 'hero-video';
-    vid.muted       = true;
+    vid.className  = 'hero-video';
+    vid.muted      = true;
     vid.playsInline = true;
-    vid.preload     = 'none';
-    vid.poster      = s.poster || 'images/homepage/hero-slide-1-interior.jpg';
+    vid.setAttribute('playsinline', '');
+    vid.setAttribute('webkit-playsinline', '');
+    vid.setAttribute('x5-playsinline', '');
     vid.setAttribute('disablepictureinpicture', '');
+    vid.preload    = 'none';
+    vid.loop       = false;
+    vid.poster     = s.poster || 'images/homepage/hero-slide-1-interior.jpg';
+
+    /* Poster div as fallback behind video */
+    const poster = document.createElement('div');
+    poster.className = 'hero-slide-img hero-video-poster';
+    poster.style.backgroundImage = `url('${s.poster || 'images/homepage/hero-slide-1-interior.jpg'}')`;
+    wrap.appendChild(poster);
+
     const src = document.createElement('source');
     src.src  = s.src;
     src.type = 'video/mp4';
@@ -66,8 +81,7 @@
       <button class="hero-dot${i === 0 ? ' active' : ''}"
         role="tab" aria-selected="${i === 0}"
         data-idx="${i}" aria-label="الشريحة ${i + 1}">
-      </button>`
-    ).join('');
+      </button>`).join('');
     dotsBar.addEventListener('click', e => {
       const btn = e.target.closest('[data-idx]');
       if (btn) goTo(parseInt(btn.dataset.idx));
@@ -76,7 +90,6 @@
 
   function allEls() { return heroEl.querySelectorAll('.hero-slide'); }
 
-  /* ─── Update text ─── */
   function updateContent(s) {
     if (tagEl)   tagEl.textContent = s.tag   || '';
     if (titleEl) titleEl.innerHTML  = s.title || '';
@@ -87,12 +100,24 @@
     }
   }
 
-  /* ─── Update dots ─── */
   function updateDots(idx) {
     dotsBar?.querySelectorAll('.hero-dot').forEach((d, i) => {
       d.classList.toggle('active', i === idx);
       d.setAttribute('aria-selected', i === idx);
     });
+  }
+
+  /* ─── Play video safely — handles mobile restrictions ─── */
+  function playVideo(vid) {
+    if (!vid) return Promise.resolve();
+    vid.muted = true; /* ensure muted for autoplay policy */
+    const p = vid.play();
+    if (p && typeof p.catch === 'function') {
+      return p.catch(() => {
+        /* Autoplay blocked — poster already showing, skip */
+      });
+    }
+    return Promise.resolve();
   }
 
   /* ─── Go to slide ─── */
@@ -105,7 +130,8 @@
 
     els[prev]?.classList.remove('active');
     els[current]?.classList.add('active');
-    els[prev]?.querySelector('video')?.pause();
+    const prevVid = els[prev]?.querySelector('video');
+    if (prevVid) { prevVid.pause(); prevVid.currentTime = 0; }
 
     updateContent(s);
     updateDots(current);
@@ -115,16 +141,30 @@
       if (vid) {
         vid.currentTime = 0;
         vid.load();
-        vid.play().catch(() => {});
+        playVideo(vid);
         vid.onended = () => goTo(current + 1);
+        /* Safety: max 30s */
         timer = setTimeout(() => goTo(current + 1), 30000);
       } else {
-        timer = setTimeout(() => goTo(current + 1), 1000);
+        timer = setTimeout(() => goTo(current + 1), 8000);
       }
     } else {
       timer = setTimeout(() => goTo(current + 1), (s.dur || 6) * 1000);
     }
   }
+
+  /* ─── Touch swipe support for mobile ─── */
+  let touchStartX = 0;
+  heroEl.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+  heroEl.addEventListener('touchend', e => {
+    const diff = touchStartX - e.changedTouches[0].screenX;
+    if (Math.abs(diff) > 50) {
+      clearTimeout(timer);
+      goTo(diff > 0 ? current + 1 : current - 1);
+    }
+  }, { passive: true });
 
   /* ─── Arrows ─── */
   arrows.forEach(btn => {
@@ -139,7 +179,7 @@
     const els = allEls();
     if (entries[0].isIntersecting) {
       const vid = els[current]?.querySelector('video');
-      if (SLIDES[current]?.type === 'video' && vid?.paused) vid.play().catch(() => {});
+      if (SLIDES[current]?.type === 'video' && vid?.paused) playVideo(vid);
       if (!timer) goTo(current);
     } else {
       clearTimeout(timer); timer = null;
@@ -156,7 +196,7 @@
       vid?.pause();
     } else {
       if (SLIDES[current]?.type === 'video' && vid) {
-        vid.play().catch(() => {});
+        playVideo(vid);
         vid.onended = () => goTo(current + 1);
         timer = setTimeout(() => goTo(current + 1), 30000);
       } else {

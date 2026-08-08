@@ -84,16 +84,15 @@ function buildFilterBar(discipline) {
   const bars = document.querySelectorAll('[data-filter-bar]');
   if (!bars.length) return;
 
-  const projects = (window.projectsData || []).filter(p =>
-    discipline ? p.discipline === discipline : true
-  );
-
-  /* Collect unique categories */
-  const cats = [...new Set(projects.map(p => p.category).filter(Boolean))];
-
   bars.forEach(bar => {
     const gridEl = bar.closest('.container')?.querySelector('[data-work-grid]');
-    const disc   = gridEl ? gridEl.getAttribute('data-work-grid') : null;
+    const disc   = gridEl ? gridEl.getAttribute('data-work-grid') : discipline;
+
+    /* Filter categories by THIS bar's discipline only */
+    const projects = (window.projectsData || []).filter(p =>
+      disc ? p.discipline === disc : true
+    );
+    const cats = [...new Set(projects.map(p => p.category).filter(Boolean))];
 
     const items = [{ label: 'الكل', val: 'all' }, ...cats.map(c => ({ label: c, val: c }))];
 
