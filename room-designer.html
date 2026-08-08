@@ -569,8 +569,16 @@ body.m-shell #mRail::-webkit-scrollbar{display:none}
   overflow-x:auto;scrollbar-width:none;touch-action:pan-x;
   mask-image:linear-gradient(to right,#000 86%,transparent 99%);
   -webkit-mask-image:linear-gradient(to right,#000 86%,transparent 99%)}
+html[dir="rtl"] #mRail .mr-strip{mask-image:linear-gradient(to left,#000 86%,transparent 99%);
+  -webkit-mask-image:linear-gradient(to left,#000 86%,transparent 99%)}
 #mRail .mr-strip::-webkit-scrollbar{display:none}
 #mRail > button,#mRail > .mr-sep{flex:0 0 auto}
+/* strip edge arrows: show only while tools hide off that side */
+#mRail .mr-arrow{display:none;flex:0 0 auto;width:24px;min-width:24px;min-height:34px;height:34px;
+  padding:0;align-items:center;justify-content:center;font-size:16px;font-weight:700;
+  border-radius:9px;opacity:.92}
+#mRail .mr-arrow.show{display:flex}
+#mRail .mr-arrow:disabled{opacity:.22}
 #mRail button{flex:0 0 auto;min-width:56px;min-height:47px;display:flex;flex-direction:column;
   align-items:center;justify-content:center;gap:2px;font-size:10px;padding:4px 7px;border-radius:12px}
 #mRail button .ic{width:19px;height:19px;display:block}
@@ -8085,6 +8093,7 @@ function syncShell() {
   const m = mobileModeFor(window.innerWidth, coarseQuery());
   document.body.classList.toggle("m-shell", m);
   if (rail) rail.hidden = !m;
+  rail?._syncArrows?.();
 }
 function syncActive() {
   if (!rail || rail.hidden) return;
@@ -8099,6 +8108,35 @@ function buildRail() {
   const strip = document.createElement("div");
   strip.className = "mr-strip";
   rail.appendChild(strip);
+  const mkArrow = (next) => {
+    const a = document.createElement("button");
+    a.type = "button";
+    a.className = "mr-arrow " + (next ? "mr-next" : "mr-prev");
+    a.setAttribute("aria-label", next ? "More tools" : "Previous tools");
+    a.addEventListener("click", () => {
+      const d = getComputedStyle(strip).direction === "rtl" ? -1 : 1;
+      strip.scrollBy({ left: (next ? 1 : -1) * d * strip.clientWidth * 0.72, behavior: "smooth" });
+    });
+    return a;
+  };
+  const prevA = mkArrow(false), nextA = mkArrow(true);
+  rail.insertBefore(prevA, strip);
+  strip.after(nextA);
+  const syncArrows = () => {
+    const max = strip.scrollWidth - strip.clientWidth;
+    const pos = Math.abs(strip.scrollLeft);
+    const more = max > 8;
+    const rtl = getComputedStyle(strip).direction === "rtl";
+    prevA.classList.toggle("show", more && pos >= 4);
+    nextA.classList.toggle("show", more && max - pos >= 4);
+    prevA.textContent = rtl ? "›" : "‹";
+    nextA.textContent = rtl ? "‹" : "›";
+    prevA.disabled = pos < 4;
+    nextA.disabled = max - pos < 4;
+  };
+  strip.addEventListener("scroll", syncArrows, { passive: true });
+  window.addEventListener("resize", syncArrows);
+  rail._syncArrows = syncArrows;
   strip.addEventListener("wheel", (e) => {
     if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
       strip.scrollLeft += e.deltaY;
@@ -8143,6 +8181,7 @@ function buildRail() {
   }
   ctx.bus.on("tool-changed", syncActive);
   syncActive();
+  requestAnimationFrame(syncArrows);
 }
 function attachMobileRail(actions5) {
   A3 = actions5;
